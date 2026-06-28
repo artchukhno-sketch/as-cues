@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AS Cues — мастерская резных киёв ручной работы | Днепр</title>
+<meta name="description" content="Мастерская «АС»: резные кии для русского бильярда ручной работы с 2000 года. Эбен, палисандр, инкрустация серебром и бивнём. Кии чемпионов мира и Украины.">
+<meta property="og:title" content="AS Cues — мастерская резных киёв ручной работы">
+<meta property="og:description" content="Кий как произведение мастера. Русский бильярд, ручная работа с 2000 года.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+
+<main>
+  <!-- ГЕРОЙ -->
+  <section class="hero">
+    <video class="hero__video" src="assets/video/cue-rotate.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="hero__grad"></div>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow">Авторские бильярдные кии</span>
+        <h1>Кий как <em>шедевр</em></h1>
+        <p class="hero__sub">Кии для бильярда — от рядовых моделей до коллекционных. Подбираем дерево, баланс и вес под вашу игру.</p>
+        <div class="btn-row">
+          <a class="btn btn--gold" href="#catalog">Смотреть каталог</a>
+          <a class="btn btn--ghost" href="contacts.html#zayavka">Заказать консультацию</a>
+        </div>
+        <div class="hero__meta">
+          <div><div class="num">25</div><div class="lbl">лет</div></div>
+          <div><div class="num">18</div><div class="lbl">моделей</div></div>
+          <div><div class="num">15+</div><div class="lbl">пород дерева</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАТАЛОГ (главное продающее — сразу после героя) -->
+  <section class="section section--tight" id="catalog">
+    <div class="wrap">
+      <div class="catalog-head reveal">
+        <div>
+          <span class="eyebrow">Модельный ряд</span>
+          <h2 style="font-size:clamp(28px,4vw,44px);margin-top:16px">Каталог киёв</h2>
+        </div>
+        <button type="button" class="quicknav-open" aria-haspopup="dialog">
+          Все модели <span class="quicknav-open__count">18</span>
+        </button>
+      </div>
+      <!-- каталог рендерится из js/catalog-data.js -->
+      <div id="catalog-root"></div>
+    </div>
+  </section>
+
+  <!-- Панель быстрой навигации (выезжает справа) -->
+  <div class="quicknav" id="quicknav" aria-hidden="true">
+    <div class="quicknav__overlay" data-quicknav-close></div>
+    <aside class="quicknav__panel" role="dialog" aria-modal="true" aria-label="Все модели">
+      <div class="quicknav__head">
+        <span class="quicknav__title">Все модели</span>
+        <button type="button" class="quicknav__close" aria-label="Закрыть" data-quicknav-close>&times;</button>
+      </div>
+      <nav class="quicknav__list" id="quicknav-list"><!-- список из catalog-data.js --></nav>
+    </aside>
+  </div>
+
+  <!-- О МАСТЕРСКОЙ -->
+  <section class="section">
+    <div class="wrap reveal">
+      <div class="brand-block">
+        <span class="eyebrow">Бренд</span>
+        <h2>Ремесло,<br>выверенное временем</h2>
+        <div class="brand-banner">
+          <img src="img/decor/about-us-heading.jpg" alt="Мастерская «АС»: бильярдные кии ручной работы на столе в зале">
+        </div>
+        <div class="brand-block__text brand-block__text--2">
+          <div class="brand-col">
+            <div class="brand-col__head"><span class="brand-col__num">01</span><h3 class="brand-col__title">История</h3></div>
+            <p>С 2000 года мастерская «АС» производит бильярдные кии ручной работы. Сегодня это бренд с собственным именем — кии-шедевры, которые покупают и коллекционируют наравне со стоимостью самого бильярдного стола.</p>
+          </div>
+          <div class="brand-col">
+            <div class="brand-col__head"><span class="brand-col__num">02</span><h3 class="brand-col__title">Подход</h3></div>
+            <p>Лучшие кии для русской пирамиды ручной работы, огромный диапазон ценовых категорий. Изготовим кий любого размера и массы. И никогда не отказываемся от своей продукции: любую часть починим, заменим или доработаем.</p>
+          </div>
+        </div>
+        <div class="btn-row" style="margin-top:28px">
+          <a class="btn btn--ink" href="about.html">О бренде и чемпионах</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- УСЛУГИ -->
+  <section class="section">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <span class="eyebrow">После покупки</span>
+        <h2 style="font-size:clamp(28px,4vw,44px)">Сервис на всю жизнь кия</h2>
+      </div>
+      <div class="serv-grid">
+        <div class="serv">
+          <div class="serv__head"><span class="serv__num">01</span><h3>Ремонт и доработка</h3></div>
+          <div class="serv__media"><img src="img/decor/banners/service-repair.jpg" alt="Мастер дорабатывает бильярдный кий" loading="lazy" width="800" height="600"></div>
+          <div class="serv__body">
+            <p>Корректировка веса, замена наклеек, скрутки, шафта, бамперной чашки. Рихтовка и переполировка. Любое повреждение исправимо.</p>
+            <a class="arrow-link" href="services.html#remont">Прайс на ремонт</a>
+          </div>
+        </div>
+        <div class="serv">
+          <div class="serv__head"><span class="serv__num">02</span><h3>Программа «Апгрейд»</h3></div>
+          <div class="serv__media"><img src="img/decor/banners/service-upgrade.jpg" alt="Бюджетный и премиальный кий на сукне — обмен с доплатой" loading="lazy" width="800" height="600"></div>
+          <div class="serv__body">
+            <p>Хотите кий дороже, но не знаете, что делать со старым? Принесите — оценим, подберём новый, доплатите только разницу.</p>
+            <a class="arrow-link" href="services.html#upgrade">Как это работает</a>
+          </div>
+        </div>
+        <div class="serv">
+          <div class="serv__head"><span class="serv__num">03</span><h3>Кий под вас</h3></div>
+          <div class="serv__media"><img src="img/decor/banners/service-hand.jpg" alt="Бильярдный кий ручной работы в руке игрока" loading="lazy" width="800" height="600"></div>
+          <div class="serv__body">
+            <p>Дерево, баланс, длина и вес подбираются индивидуально на консультации с менеджером. Это не товар с полки — это ваш инструмент.</p>
+            <a class="arrow-link" href="contacts.html#zayavka">Получить консультацию</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРИ ПОКУПКЕ -->
+  <section class="section">
+    <div class="wrap reveal">
+      <div class="section-head reveal">
+        <span class="eyebrow">При покупке</span>
+        <h2>Бонусы и выгода</h2>
+      </div>
+      <div class="promo-grid">
+        <div class="promo-item">
+          <span class="promo-item__num">01</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">Заказ от 300 $</span>
+            <span class="promo-item__bonus">Бесплатная доставка по Украине за наш счёт</span>
+          </span>
+          <span class="promo-item__seal" aria-hidden="true"><img src="img/logo.svg" alt=""></span>
+        </div>
+        <div class="promo-item">
+          <span class="promo-item__num">02</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">Заказ от 500 $</span>
+            <span class="promo-item__bonus">Скидка 30% на любой чехол</span>
+          </span>
+          <span class="promo-item__seal" aria-hidden="true"><img src="img/logo.svg" alt=""></span>
+        </div>
+        <div class="promo-item">
+          <span class="promo-item__num">03</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">Заказ от 1500 $</span>
+            <span class="promo-item__bonus">Чехол «Эко» в подарок или любой другой со скидкой 50%</span>
+          </span>
+          <span class="promo-item__seal" aria-hidden="true"><img src="img/logo.svg" alt=""></span>
+        </div>
+        <div class="promo-item">
+          <span class="promo-item__num">04</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">10 рядовых киёв</span>
+            <span class="promo-item__bonus">Одиннадцатый кий в подарок</span>
+          </span>
+          <span class="promo-item__seal" aria-hidden="true"><img src="img/logo.svg" alt=""></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section dark">
+    <div class="wrap reveal">
+      <div class="cta-block">
+        <span class="eyebrow center">Заявка на консультацию</span>
+        <h2>Подберём кий под вашу игру</h2>
+        <p class="lead">Кий от 300 $ — выбор по дереву, балансу и весу. Самый верный способ определиться — короткий разговор с менеджером. Оставьте контакт или напишите в мессенджер.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn--gold" href="contacts.html#zayavka">Оставить заявку</a>
+          <a class="btn btn--ghost" href="tel:+380985114275">+38 098 511 42 75</a>
+        </div>
+        <div class="messengers">
+          <a class="chip" href="https://wa.me/380985114275" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="chip" href="https://t.me/+380985114275" target="_blank" rel="noopener">Telegram</a>
+          <a class="chip" href="viber://chat?number=%2B380985114275">Viber</a>
+          <a class="chip" href="https://instagram.com/as.cuesstore" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/layout.js"></script>
+<script src="js/catalog-data.js" charset="utf-8"></script>
+<script src="js/main.js"></script>
+<script src="js/catalog-render.js" charset="utf-8"></script>
+<script src="js/quicknav.js" charset="utf-8"></script>
+<script src="js/zoom.js"></script>
+</body>
+</html>

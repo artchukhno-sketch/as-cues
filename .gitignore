@@ -1,0 +1,32 @@
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+debug.log
+
+# Editor
+.vscode/
+.idea/
+
+# Env
+.env
+.env.local
+
+# Temp
+*.tmp
+*.bak
+
+# PSD (large binary originals)
+assets/Studio_product_photo_of_the_EX_Nano_Banana_2_67746.psd
+
+# Dev notes (not for production)
+old-site.md
+decisions.md
+cue-preview.html
+style-guide.html

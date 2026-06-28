@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Модель кия | AS Cues</title>
+<meta name="description" content="Варианты модели кия мастерской «АС»: породы дерева, цены, размеры и вес. Выберите рисунок и характер — финальную сборку сделаем на консультации.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="cues">
+<div id="site-header"></div>
+
+<main>
+  <header class="page-head">
+    <div class="wrap">
+      <div class="page-head__inner">
+        <div class="breadcrumbs"><a href="index.html">Главная</a> &nbsp;/&nbsp; <a href="index.html#catalog">Каталог</a> &nbsp;/&nbsp; <span id="crumb-model">Модель</span></div>
+        <span class="eyebrow" id="model-group">Модель</span>
+        <h1 id="model-title">Модель кия</h1>
+        <p id="model-sub"></p>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <!-- сюда рендерится модель из js/catalog-data.js по ?slug= -->
+      <div id="model-root"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section dark">
+    <div class="wrap reveal">
+      <div class="cta-block">
+        <span class="eyebrow center">Готовы заказать?</span>
+        <h2>Соберём этот кий под вашу игру</h2>
+        <p class="lead" style="margin-inline:auto">Дерево, баланс, длина и вес — под вас. Оставьте заявку, менеджер уточнит детали и цену.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn--gold" href="contacts.html#zayavka">Оставить заявку</a>
+          <a class="btn btn--ghost" href="index.html#catalog">← Назад в каталог</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/layout.js"></script>
+<script src="js/catalog-data.js" charset="utf-8"></script>
+<script src="js/main.js"></script>
+<script src="js/model-render.js" charset="utf-8"></script>
+<script src="js/zoom.js"></script>
+</body>
+</html>
