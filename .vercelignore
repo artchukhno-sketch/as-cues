@@ -1,0 +1,19 @@
+# Large binary originals
+assets/Studio_product_photo_of_the_EX_Nano_Banana_2_67746.psd
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+debug.log
+
+# Dev notes
+old-site.md
+decisions.md
+cue-preview.html
+style-guide.html
+
+# Git
+.git/
