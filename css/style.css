@@ -1550,15 +1550,14 @@ body:has(> main > .page-head) { padding-top: 0; }
 .acc-grid--wide { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 .acc-item { display: flex; flex-direction: column; }
 .acc-item__photo {
-  border: 1px solid var(--line);
-  background: var(--paper);
   aspect-ratio: 1;
   display: flex; align-items: center; justify-content: center;
-  padding: 18px;
   overflow: hidden;
 }
 .acc-grid--wide .acc-item__photo { aspect-ratio: 16/10; }
 .acc-item__photo img { width: 100%; height: 100%; object-fit: contain; }
+/* фото-предметы во всю ширину блока (тренажёр и др. на цветном фоне) */
+.acc-grid--bare .acc-item__photo img { object-fit: cover; }
 .acc-item__name {
   font-family: var(--serif);
   font-size: clamp(16px, 1.5vw, 19px);
@@ -1604,6 +1603,36 @@ body:has(> main > .page-head) { padding-top: 0; }
 /* ============================================================
    ИНФО-КАРТЫ (услуги/процесс)
    ============================================================ */
+
+/* шаги процесса: крупный номер слева, заголовок и текст рядом */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(28px, 3vw, 44px);
+  margin-top: clamp(40px, 5vw, 64px);
+}
+/* кнопка под шагами — в той же 4-колоночной сетке, ровно по ширине блока 04 */
+.steps-cta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(28px, 3vw, 44px);
+  margin-top: clamp(32px, 4vw, 48px);
+}
+.steps-cta .btn {
+  grid-column: 4;
+  width: 100%;
+  justify-content: center;
+}
+.step-item { display: flex; flex-direction: column; gap: 14px; }
+.step-item__num {
+  font-family: var(--serif);
+  font-size: clamp(40px, 4.5vw, 60px);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--line-2);
+}
+.step-item__body h3 { font-size: clamp(18px, 1.8vw, 21px); margin-bottom: 8px; line-height: 1.15; }
+.step-item__body p { font-size: 14px; color: var(--txt-mut); line-height: 1.5; }
 
 .info-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 24px; }
 /* строка с кнопкой под инфо-картами: те же 4 колонки, кнопка занимает первую */
@@ -1736,6 +1765,10 @@ body:has(> main > .page-head) { padding-top: 0; }
   /* промо: на узком экране печать меньше, у правого края */
   .promo-item { gap: 14px; }
   .promo-item__seal { width: clamp(40px, 12vw, 56px); }
+  /* шаги апгрейда: в 2 колонки, кнопка во всю ширину */
+  .steps { grid-template-columns: 1fr 1fr; }
+  .steps-cta { justify-content: stretch; }
+  .steps-cta .btn { width: 100%; justify-content: center; }
   /* CTA: на узком экране кнопки и мессенджеры переносятся в 2 ряда */
   .cta-block .btn-row,
   .cta-block .messengers { flex-wrap: wrap; }
