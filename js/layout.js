@@ -10,17 +10,10 @@
   // У «Кии» справа группы моделей; у остальных — краткое описание + переход.
   const catalogCats = [
     { key: 'kii', label: 'Кии', href: 'index.html#catalog', groups: [
-      { title: 'Базовые', href: 'index.html#model-junior', items: [
-        { label: 'Юниор', href: 'index.html#model-junior' },
-        { label: 'Пул', href: 'index.html#model-pyl' },
-        { label: 'Цветок', href: 'index.html#model-tsvetok' },
-      ]},
-      { title: 'Стрелы', href: 'index.html#model-arrows', items: [
-        { label: 'Стрелы', href: 'index.html#model-arrows' },
-      ]},
-      { title: 'Консул', href: 'index.html#model-konsyl-34', items: [
-        { label: 'Консул 3-4', href: 'index.html#model-konsyl-34' },
-        { label: 'Консул цельный', href: 'index.html#model-konsyl-tselnii' },
+      { title: 'Стрелы', href: 'index.html#model-korona-4perjevaia', items: [
+        { label: 'Корона 4-перьевая стрела', href: 'index.html#model-korona-4perjevaia' },
+        { label: 'Корона 8-перьевая стрела', href: 'index.html#model-korona-vosmiperjevaia' },
+        { label: 'Корона 12-перьевая стрела', href: 'index.html#model-korona-12perjevaia' },
       ]},
       { title: 'Мастер', href: 'index.html#model-master-46', items: [
         { label: 'Мастер 4-6', href: 'index.html#model-master-46' },
@@ -30,13 +23,11 @@
         { label: 'Мастер Люкс две трети', href: 'index.html#model-master-luks-23' },
         { label: 'Мастер Люкс цельный', href: 'index.html#model-master-luks-tselnii' },
       ]},
-      { title: 'Корона', href: 'index.html#model-korona-4perjevaia', items: [
-        { label: 'Четырёхперьевая', href: 'index.html#model-korona-4perjevaia' },
-        { label: 'Четырёхперьевая цельная', href: 'index.html#model-korona4perjevaia-tselnaia' },
-        { label: 'Восьмиперьевая', href: 'index.html#model-korona-vosmiperjevaia' },
-        { label: 'Восьмиперьевая цельная', href: 'index.html#model-korona-vosmiperjevaia-tselnaia' },
-        { label: 'Двенадцатиперьевая', href: 'index.html#model-korona-12perjevaia' },
-        { label: 'Корона две трети', href: 'index.html#model-korona-23' },
+      { title: 'Другие модели', href: 'index.html#model-tsvetok', items: [
+        { label: 'Цветок', href: 'index.html#model-tsvetok' },
+        { label: 'Консул 3-4', href: 'index.html#model-konsyl-34' },
+        { label: 'Юниор', href: 'index.html#model-junior' },
+        { label: 'Легенда', href: 'index.html#model-legenda' },
       ]},
     ]},
     { key: 'cases', label: 'Чехлы', href: 'cases.html',
@@ -172,7 +163,7 @@
           <h4>Контакты</h4>
           <a href="tel:${PHONE_TEL}">${PHONE}</a>
           <a href="mailto:ascuesdnepr@gmail.com">ascuesdnepr@gmail.com</a>
-          <p>г. Днепр, ж/м Тополь&nbsp;3, бул.&nbsp;Платонова,&nbsp;8А</p>
+          <p>г. Днепр, бул.&nbsp;Платонова,&nbsp;8А</p>
         </div>
       </div>
       <div class="footer__bottom">

@@ -452,8 +452,8 @@ body:has(> main > .page-head) { padding-top: 0; }
 .cat-pane.is-active { display: block; }
 .cat-pane__groups {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 4px 12px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 4px 28px;
 }
 .cat-pane__col { min-width: 0; }
 .cat-pane__title {
@@ -476,6 +476,8 @@ body:has(> main > .page-head) { padding-top: 0; }
   padding: 6px;
   position: relative;
   transition: color .18s var(--ease);
+  overflow-wrap: anywhere;    /* длинные слова переносятся внутри колонки, не залезают на соседнюю */
+  max-width: 100%;
 }
 .cat-pane__links a::after {
   content: "";

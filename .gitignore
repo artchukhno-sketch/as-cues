@@ -24,6 +24,10 @@ debug.log
 
 # PSD (large binary originals)
 assets/Studio_product_photo_of_the_EX_Nano_Banana_2_67746.psd
+*.psd
+
+# Рабочая папка с исходниками фото (не для сайта)
+img/models/new/
 
 # Dev notes (not for production)
 old-site.md

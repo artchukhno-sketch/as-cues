@@ -1,91 +1,59 @@
 window.CATALOG = [
   {
-    "slug": "arrows",
-    "title": "Стрелы",
+    "slug": "korona-4perjevaia",
+    "title": "Корона 4-перьевая стрела",
     "group": "Стрелы",
     "gid": "strely",
     "tag": "Линейка стрел",
-    "sub": "Узнаваемый узор стрел и сетки",
-    "range": "400–1800 $",
-    "variants": [
-      {
-        "img": "img/models/arrows-strela-korona-4perevaya-chernyi-grab.jpg",
-        "wood": "Стрела Корона 4 – перьевая черный граб",
-        "price": "500 $",
-        "size": "163",
-        "weight": "~700"
-      },
-      {
-        "img": "img/models/arrows-korona-8perevaya-kokobolo.jpg",
-        "wood": "Корона 8-и перьевая кокоболо",
-        "price": "900 $",
-        "size": "~160",
-        "weight": "~700"
-      },
-      {
-        "img": "img/models/arrows-master-chernyi-grabsatin.jpg",
-        "wood": "Мастер черный граб,сатин",
-        "price": "400 $",
-        "size": "~160",
-        "weight": "~700"
-      },
-      {
-        "img": "img/models/arrows-korona-8perevaya-makuba.jpg",
-        "wood": "Корона 8-и перьевая макуба",
-        "price": "1350 $",
-        "size": "~160",
-        "weight": "~700"
-      },
-      {
-        "img": "img/models/arrows-korona-8perevaya-chernyi-grab.jpg",
-        "wood": "Корона 8-и перьевая черный граб",
-        "price": "750 $",
-        "size": "~160",
-        "weight": "~700"
-      },
-      {
-        "img": "img/models/arrows-korona-8perevaya-ebenmasaranduba-troya.jpg",
-        "wood": "Корона 8-и перьевая эбен,масарандуба Троя",
-        "price": "1800 $",
-        "size": "~160",
-        "weight": "~700"
-      },
-      {
-        "img": "img/models/arrows-korona-8perevaya-bokoteeben.jpg",
-        "wood": "Корона 8-и перьевая бокотэ,эбен",
-        "price": "900 $",
-        "size": "~160",
-        "weight": "~700"
-      }
-    ]
-  },
-  {
-    "slug": "korona-12perjevaia",
-    "title": "Корона двенадцатиперьевая",
-    "group": "Корона",
-    "gid": "korona",
-    "tag": "Флагман мастерской",
     "sub": "",
-    "range": "1000–1500 $",
+    "range": "500–600 $",
     "variants": [
       {
-        "img": "img/models/korona-12perjevaia-eben.jpg",
-        "wood": "эбен",
-        "price": "1500 $",
+        "img": "img/models/korona-4perjevaia-venge.jpg",
+        "wood": "венге",
+        "price": "500 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-12perjevaia-palisandr.jpg",
+        "img": "img/models/korona-4perjevaia-masaranduba.jpg",
+        "wood": "масарандуба",
+        "price": "500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/korona-4perjevaia-amarant.jpg",
+        "wood": "амарант",
+        "price": "500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/korona-4perjevaia-palisandr.jpg",
         "wood": "палисандр",
-        "price": "1000 $",
+        "price": "500 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-12perjevaia-gombeiro.jpg",
+        "img": "img/models/korona-4perjevaia-kokobolo.jpg",
+        "wood": "кокоболо",
+        "price": "600 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/korona-4perjevaia-gombeiro.jpg",
         "wood": "гомбейро",
-        "price": "1000 $",
+        "price": "600 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/korona-4perjevaia-zerikotte.jpg",
+        "wood": "зерикотте",
+        "price": "600 $",
         "size": "~160 см",
         "weight": "~700 г"
       }
@@ -93,10 +61,10 @@ window.CATALOG = [
   },
   {
     "slug": "korona-vosmiperjevaia",
-    "title": "Корона восьмиперьевая",
-    "group": "Корона",
-    "gid": "korona",
-    "tag": "Линейка Корона",
+    "title": "Корона 8-перьевая стрела",
+    "group": "Стрелы",
+    "gid": "strely",
+    "tag": "Линейка стрел",
     "sub": "",
     "range": "600–1050 $",
     "variants": [
@@ -145,179 +113,34 @@ window.CATALOG = [
     ]
   },
   {
-    "slug": "korona-vosmiperjevaia-tselnaia",
-    "title": "Корона восьмиперьевая цельная",
-    "group": "Корона",
-    "gid": "korona",
-    "tag": "Линейка Корона",
+    "slug": "korona-12perjevaia",
+    "title": "Корона 12-перьевая стрела",
+    "group": "Стрелы",
+    "gid": "strely",
+    "tag": "Линейка стрел",
     "sub": "",
-    "range": "750–1050 $",
+    "range": "1000–1500 $",
     "variants": [
       {
-        "img": "img/models/korona-vosmiperjevaia-tselnaia-eben.jpg",
+        "img": "img/models/korona-12perjevaia-eben.jpg",
         "wood": "эбен",
-        "price": "1050 $",
+        "price": "1500 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-vosmiperjevaia-tselnaia-palisandr.jpg",
-        "wood": "палисандр",
-        "price": "750 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-vosmiperjevaia-tselnaia-gombeiro.jpg",
-        "wood": "гомбейро",
-        "price": "750 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-vosmiperjevaia-tselnaia-grenadil.jpg",
-        "wood": "гренадил",
-        "price": "1050 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      }
-    ]
-  },
-  {
-    "slug": "korona-23",
-    "title": "Корона две трети",
-    "group": "Корона",
-    "gid": "korona",
-    "tag": "Линейка Корона",
-    "sub": "",
-    "range": "600–1050 $",
-    "variants": [
-      {
-        "img": "img/models/korona-23eben.jpg",
-        "wood": "эбен",
-        "price": "1050 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-23korona-vosmiperevaya-grenadil.jpg",
-        "wood": "Корона восьмиперьевая гренадил",
-        "price": "1050 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-23gombeiro.jpg",
-        "wood": "гомбейро",
-        "price": "600 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-23venge.jpg",
-        "wood": "венге",
-        "price": "750 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-23masaranduba.jpg",
-        "wood": "масарандуба",
-        "price": "750 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-23kokobolo.jpg",
-        "wood": "кокоболо",
-        "price": "750 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-23palisandr.jpg",
+        "img": "img/models/korona-12perjevaia-palisandr.jpg",
         "wood": "палисандр",
         "price": "1000 $",
         "size": "~160 см",
         "weight": "~700 г"
-      }
-    ]
-  },
-  {
-    "slug": "korona4perjevaia-tselnaia",
-    "title": "Корона четырёхперьевая цельная",
-    "group": "Корона",
-    "gid": "korona",
-    "tag": "Линейка Корона",
-    "sub": "",
-    "range": "600–900 $",
-    "variants": [
-      {
-        "img": "img/models/korona4perjevaia-tselnaia-eben-satin.jpg",
-        "wood": "эбен, сатин",
-        "price": "900 $",
-        "size": "~160 см",
-        "weight": "~700 г"
       },
       {
-        "img": "img/models/korona4perjevaia-tselnaia-gombeiro.jpg",
+        "img": "img/models/korona-12perjevaia-gombeiro.jpg",
         "wood": "гомбейро",
-        "price": "600 $",
+        "price": "1000 $",
         "size": "~160 см",
         "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona4perjevaia-tselnaia-eben-masaranduba.jpg",
-        "wood": "эбен, масарандуба",
-        "price": "900 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona4perjevaia-tselnaia-eben.jpg",
-        "wood": "эбен",
-        "price": "900 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona4perjevaia-tselnaia-grenadil.jpg",
-        "wood": "гренадил",
-        "price": "900 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      }
-    ]
-  },
-  {
-    "slug": "tsvetok",
-    "title": "Цветок",
-    "group": "Базовые",
-    "gid": "bazovye",
-    "tag": "Базовая модель",
-    "sub": "4-лучевой узор",
-    "range": "400–750 $",
-    "variants": [
-      {
-        "img": "img/models/tsvetok-4luchevoi-chernyi-grab-popugai.jpg",
-        "wood": "4 – лучевой черный граб Попугай",
-        "price": "400 $",
-        "size": "163",
-        "weight": "~700"
-      },
-      {
-        "img": "img/models/tsvetok-4luchevoi-eben.jpg",
-        "wood": "4 – лучевой эбен",
-        "price": "750 $",
-        "size": "163",
-        "weight": "~700"
-      },
-      {
-        "img": "img/models/tsvetok-4luchevoi-eben-popugai.jpg",
-        "wood": "4 – лучевой эбен Попугай",
-        "price": "750 $",
-        "size": "163",
-        "weight": "~700"
       }
     ]
   },
@@ -415,126 +238,6 @@ window.CATALOG = [
         "img": "img/models/master-luks-tselnii-eben.jpg",
         "wood": "эбен",
         "price": "750 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      }
-    ]
-  },
-  {
-    "slug": "korona-4perjevaia",
-    "title": "Корона четырёхперьевая",
-    "group": "Корона",
-    "gid": "korona",
-    "tag": "Линейка Корона",
-    "sub": "",
-    "range": "500–600 $",
-    "variants": [
-      {
-        "img": "img/models/korona-4perjevaia-venge.jpg",
-        "wood": "венге",
-        "price": "500 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-4perjevaia-masaranduba.jpg",
-        "wood": "масарандуба",
-        "price": "500 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-4perjevaia-amarant.jpg",
-        "wood": "амарант",
-        "price": "500 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-4perjevaia-palisandr.jpg",
-        "wood": "палисандр",
-        "price": "500 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-4perjevaia-kokobolo.jpg",
-        "wood": "кокоболо",
-        "price": "600 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-4perjevaia-gombeiro.jpg",
-        "wood": "гомбейро",
-        "price": "600 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/korona-4perjevaia-zerikotte.jpg",
-        "wood": "зерикотте",
-        "price": "600 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      }
-    ]
-  },
-  {
-    "slug": "konsyl-tselnii",
-    "title": "Консул цельный",
-    "group": "Консул",
-    "gid": "konsul",
-    "tag": "Линейка Консул",
-    "sub": "",
-    "range": "300–600 $",
-    "variants": [
-      {
-        "img": "img/models/konsyl-tselnii-eben-amarello.jpg",
-        "wood": "эбен, амарелло",
-        "price": "600 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/konsyl-tselnii-masaranduba.jpg",
-        "wood": "масарандуба",
-        "price": "300 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/konsyl-tselnii-venge.jpg",
-        "wood": "венге",
-        "price": "300 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/konsyl-tselnii-palisandr.jpg",
-        "wood": "палисандр",
-        "price": "300 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/konsyl-tselnii-gombeiro.jpg",
-        "wood": "гомбейро",
-        "price": "400 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/konsyl-tselnii-zerikotte.jpg",
-        "wood": "зерикотте",
-        "price": "400 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/konsyl-tselnii-kokobolo.jpg",
-        "wood": "кокоболо",
-        "price": "400 $",
         "size": "~160 см",
         "weight": "~700 г"
       }
@@ -781,10 +484,42 @@ window.CATALOG = [
     ]
   },
   {
+    "slug": "tsvetok",
+    "title": "Цветок",
+    "group": "Другие модели",
+    "gid": "drugie",
+    "tag": "Базовая модель",
+    "sub": "4-лучевой узор",
+    "range": "400–750 $",
+    "variants": [
+      {
+        "img": "img/models/tsvetok-4luchevoi-chernyi-grab-popugai.jpg",
+        "wood": "4 – лучевой черный граб Попугай",
+        "price": "400 $",
+        "size": "163",
+        "weight": "~700"
+      },
+      {
+        "img": "img/models/tsvetok-4luchevoi-eben.jpg",
+        "wood": "4 – лучевой эбен",
+        "price": "750 $",
+        "size": "163",
+        "weight": "~700"
+      },
+      {
+        "img": "img/models/tsvetok-4luchevoi-eben-popugai.jpg",
+        "wood": "4 – лучевой эбен Попугай",
+        "price": "750 $",
+        "size": "163",
+        "weight": "~700"
+      }
+    ]
+  },
+  {
     "slug": "konsyl-34",
     "title": "Консул 3-4",
-    "group": "Консул",
-    "gid": "konsul",
+    "group": "Другие модели",
+    "gid": "drugie",
     "tag": "Линейка Консул",
     "sub": "",
     "range": "120–180 $",
@@ -808,19 +543,12 @@ window.CATALOG = [
   {
     "slug": "junior",
     "title": "Юниор",
-    "group": "Базовые",
-    "gid": "bazovye",
+    "group": "Другие модели",
+    "gid": "drugie",
     "tag": "Базовая модель",
     "sub": "Цельные и разборные · шафт граб · турник из красного дерева",
     "range": "50–80 $",
     "variants": [
-      {
-        "img": "img/models/junior-celnyi-bezperevoi.jpg",
-        "wood": "цельный безперьевой",
-        "price": "50 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
       {
         "img": "img/models/junior-celnyi-4hperevoi.jpg",
         "wood": "цельный 4-х перьевой",
@@ -834,38 +562,45 @@ window.CATALOG = [
         "price": "80 $",
         "size": "~160 см",
         "weight": "~700 г"
+      },
+      {
+        "img": "img/models/_placeholder.svg",
+        "wood": "семиперьевой цельный",
+        "price": "90 $",
+        "size": "~160 см",
+        "weight": "~700 г"
       }
     ]
   },
   {
-    "slug": "pyl",
-    "title": "Пул",
-    "group": "Базовые",
-    "gid": "bazovye",
-    "tag": "Базовая модель",
-    "sub": "Кий для игры в пул",
-    "range": "50–80 $",
+    "slug": "legenda",
+    "title": "Легенда",
+    "group": "Другие модели",
+    "gid": "drugie",
+    "tag": "Новинка",
+    "sub": "",
+    "range": "999 $",
     "variants": [
       {
-        "img": "img/models/pyl-variant-i.jpg",
-        "wood": "Вариант I",
-        "price": "50 $",
-        "size": "~160 см",
-        "weight": "~700 г"
+        "img": "img/models/_placeholder.svg",
+        "wood": "999",
+        "price": "999 $",
+        "size": "999",
+        "weight": "999"
       },
       {
-        "img": "img/models/pyl-variant-ii.jpg",
-        "wood": "Вариант II",
-        "price": "60 $",
-        "size": "~160 см",
-        "weight": "~700 г"
+        "img": "img/models/_placeholder.svg",
+        "wood": "999",
+        "price": "999 $",
+        "size": "999",
+        "weight": "999"
       },
       {
-        "img": "img/models/pyl-variant-iii.jpg",
-        "wood": "Вариант III",
-        "price": "80 $",
-        "size": "~160 см",
-        "weight": "~700 г"
+        "img": "img/models/_placeholder.svg",
+        "wood": "999",
+        "price": "999 $",
+        "size": "999",
+        "weight": "999"
       }
     ]
   }
