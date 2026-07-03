@@ -1,57 +1,99 @@
 window.CATALOG = [
   {
     "slug": "korona-4perjevaia",
-    "title": "Корона 4-перьевая стрела",
-    "group": "Стрелы",
+    "title": "Стрела Корона 4-перьевая",
+    "group": "Стрела Корона",
     "gid": "strely",
     "tag": "Линейка стрел",
     "sub": "",
     "range": "500–600 $",
     "variants": [
       {
-        "img": "img/models/korona-4perjevaia-venge.jpg",
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/01-strela-korona-4-perevaya-eben-2k.jpg",
+        "wood": "эбен",
+        "price": "500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/02-strela-korona-4-perevaya-black-snake-2k.jpg",
+        "wood": "блек снейк",
+        "price": "500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/03-strela-korona-4-perevaya-gombeiro-2k.jpg",
+        "wood": "гомбейро",
+        "price": "500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/04-strela-korona-4-perevaya-kokobolo-2k.jpg",
+        "wood": "кокоболо",
+        "price": "500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/05-strela-korona-4-perevaya-antratsit-2k.jpg",
+        "wood": "антрацит",
+        "price": "500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/06-strela-korona-4-perevaya-lunniy-eben-2k.jpg",
+        "wood": "лунный эбен",
+        "price": "500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-venge.jpg",
         "wood": "венге",
         "price": "500 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-4perjevaia-masaranduba.jpg",
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-masaranduba.jpg",
         "wood": "масарандуба",
         "price": "500 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-4perjevaia-amarant.jpg",
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-amarant.jpg",
         "wood": "амарант",
         "price": "500 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-4perjevaia-palisandr.jpg",
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-palisandr.jpg",
         "wood": "палисандр",
         "price": "500 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-4perjevaia-kokobolo.jpg",
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-kokobolo.jpg",
         "wood": "кокоболо",
         "price": "600 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-4perjevaia-gombeiro.jpg",
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-gombeiro.jpg",
         "wood": "гомбейро",
         "price": "600 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-4perjevaia-zerikotte.jpg",
+        "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-zerikotte.jpg",
         "wood": "зерикотте",
         "price": "600 $",
         "size": "~160 см",
@@ -61,50 +103,106 @@ window.CATALOG = [
   },
   {
     "slug": "korona-vosmiperjevaia",
-    "title": "Корона 8-перьевая стрела",
-    "group": "Стрелы",
+    "title": "Стрела Корона 8-перьевая",
+    "group": "Стрела Корона",
     "gid": "strely",
     "tag": "Линейка стрел",
     "sub": "",
     "range": "600–1050 $",
     "variants": [
       {
-        "img": "img/models/korona-vosmiperjevaia-eben.jpg",
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/07-strela-korona-8-perevaya-grenadil-2k.jpg",
+        "wood": "гренадил",
+        "price": "1050 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/08-strela-korona-8-perevaya-eben-2k.jpg",
         "wood": "эбен",
         "price": "1050 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-vosmiperjevaia-chernyi-grab.jpg",
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/09-strela-korona-8-perevaya-bocote-eben-2k.jpg",
+        "wood": "бокоте, эбен",
+        "price": "1050 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/10-strela-korona-8-perevaya-black-snake-2k.jpg",
+        "wood": "блек снейк",
+        "price": "1050 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/11-strela-korona-8-perevaya-zmeya-2k.jpg",
+        "wood": "змея",
+        "price": "1050 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/12-strela-korona-8-perevaya-ziricote-eben-2k.jpg",
+        "wood": "зерикотте, эбен",
+        "price": "1050 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/13-strela-korona-8-perevaya-antratsit-2k.jpg",
+        "wood": "антрацит",
+        "price": "1050 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/14-strela-korona-8-perevaya-kokobolo-2k.jpg",
+        "wood": "кокоболо",
+        "price": "1050 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-vosmiperjevaia-eben.jpg",
+        "wood": "эбен",
+        "price": "1050 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-vosmiperjevaia-chernyi-grab.jpg",
         "wood": "черный граб",
         "price": "750 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-vosmiperjevaia-palisandr.jpg",
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-vosmiperjevaia-palisandr.jpg",
         "wood": "палисандр",
         "price": "750 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-vosmiperjevaia-kokobolo.jpg",
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-vosmiperjevaia-kokobolo.jpg",
         "wood": "кокоболо",
         "price": "750 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-vosmiperjevaia-gombeiro.jpg",
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-vosmiperjevaia-gombeiro.jpg",
         "wood": "гомбейро",
         "price": "750 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-vosmiperjevaia-masarandubachernyi-grab.jpg",
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-vosmiperjevaia-masarandubachernyi-grab.jpg",
         "wood": "масарандуба,черный граб",
         "price": "600 $",
         "size": "~160",
@@ -114,29 +212,29 @@ window.CATALOG = [
   },
   {
     "slug": "korona-12perjevaia",
-    "title": "Корона 12-перьевая стрела",
-    "group": "Стрелы",
+    "title": "Стрела Корона 12-перьевая",
+    "group": "Стрела Корона",
     "gid": "strely",
     "tag": "Линейка стрел",
     "sub": "",
     "range": "1000–1500 $",
     "variants": [
       {
-        "img": "img/models/korona-12perjevaia-eben.jpg",
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12perjevaia-eben.jpg",
         "wood": "эбен",
         "price": "1500 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-12perjevaia-palisandr.jpg",
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12perjevaia-palisandr.jpg",
         "wood": "палисандр",
         "price": "1000 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/korona-12perjevaia-gombeiro.jpg",
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12perjevaia-gombeiro.jpg",
         "wood": "гомбейро",
         "price": "1000 $",
         "size": "~160 см",
@@ -154,35 +252,35 @@ window.CATALOG = [
     "range": "450–750 $",
     "variants": [
       {
-        "img": "img/models/master-luks-23eben-masaranduba.jpg",
+        "img": "img/models/master/master-luks-dve-treti/2k/master-luks-23eben-masaranduba.jpg",
         "wood": "эбен, масарандуба",
         "price": "750 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-luks-23gombeiro.jpg",
+        "img": "img/models/master/master-luks-dve-treti/2k/master-luks-23gombeiro.jpg",
         "wood": "гомбейро",
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-luks-23palisandr.jpg",
+        "img": "img/models/master/master-luks-dve-treti/2k/master-luks-23palisandr.jpg",
         "wood": "палисандр",
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-luks-23eben-satin.jpg",
+        "img": "img/models/master/master-luks-dve-treti/2k/master-luks-23eben-satin.jpg",
         "wood": "эбен, сатин",
         "price": "750 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-luks-23eben.jpg",
+        "img": "img/models/master/master-luks-dve-treti/2k/master-luks-23eben.jpg",
         "wood": "эбен",
         "price": "750 $",
         "size": "~160 см",
@@ -200,42 +298,42 @@ window.CATALOG = [
     "range": "450–750 $",
     "variants": [
       {
-        "img": "img/models/master-luks-tselnii-eben-satin.jpg",
+        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-eben-satin.jpg",
         "wood": "эбен, сатин",
         "price": "750 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-luks-tselnii-bokote-eben.jpg",
+        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-bokote-eben.jpg",
         "wood": "бокоте, эбен",
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-luks-tselnii-gombeiro.jpg",
+        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-gombeiro.jpg",
         "wood": "гомбейро",
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-luks-tselnii-kokobolo.jpg",
+        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-kokobolo.jpg",
         "wood": "кокоболо",
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-luks-tselnii-palisandr.jpg",
+        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-palisandr.jpg",
         "wood": "палисандр",
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-luks-tselnii-eben.jpg",
+        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-eben.jpg",
         "wood": "эбен",
         "price": "750 $",
         "size": "~160 см",
@@ -253,49 +351,49 @@ window.CATALOG = [
     "range": "200–550 $",
     "variants": [
       {
-        "img": "img/models/master-23ebenmasaranduba.jpg",
+        "img": "img/models/master/master-dve-treti/2k/master-23ebenmasaranduba.jpg",
         "wood": "эбен,масарандуба",
         "price": "550 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-23amarant.jpg",
+        "img": "img/models/master/master-dve-treti/2k/master-23amarant.jpg",
         "wood": "амарант",
         "price": "200 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-23masaranduba.jpg",
+        "img": "img/models/master/master-dve-treti/2k/master-23masaranduba.jpg",
         "wood": "масарандуба",
         "price": "220 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-23venge.jpg",
+        "img": "img/models/master/master-dve-treti/2k/master-23venge.jpg",
         "wood": "венге",
         "price": "220 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-23palisandr.jpg",
+        "img": "img/models/master/master-dve-treti/2k/master-23palisandr.jpg",
         "wood": "палисандр",
         "price": "300 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-23kokobolo.jpg",
+        "img": "img/models/master/master-dve-treti/2k/master-23kokobolo.jpg",
         "wood": "кокоболо",
         "price": "400 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-23eben-movingo.jpg",
+        "img": "img/models/master/master-dve-treti/2k/master-23eben-movingo.jpg",
         "wood": "эбен, мовинго",
         "price": "550 $",
         "size": "~160 см",
@@ -313,49 +411,49 @@ window.CATALOG = [
     "range": "220–550 $",
     "variants": [
       {
-        "img": "img/models/master-tselnii-eben.jpg",
+        "img": "img/models/master/master-tselnii/2k/master-tselnii-eben.jpg",
         "wood": "эбен",
         "price": "550 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-tselnii-masaranduba.jpg",
+        "img": "img/models/master/master-tselnii/2k/master-tselnii-masaranduba.jpg",
         "wood": "масарандуба",
         "price": "220 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-tselnii-venge.jpg",
+        "img": "img/models/master/master-tselnii/2k/master-tselnii-venge.jpg",
         "wood": "венге",
         "price": "220 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-tselnii-palisandr.jpg",
+        "img": "img/models/master/master-tselnii/2k/master-tselnii-palisandr.jpg",
         "wood": "палисандр",
         "price": "300 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-tselnii-bokote-eben.jpg",
+        "img": "img/models/master/master-tselnii/2k/master-tselnii-bokote-eben.jpg",
         "wood": "бокоте, эбен",
         "price": "350 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-tselnii-gombeiro.jpg",
+        "img": "img/models/master/master-tselnii/2k/master-tselnii-gombeiro.jpg",
         "wood": "гомбейро",
         "price": "400 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-tselnii-kokobolo.jpg",
+        "img": "img/models/master/master-tselnii/2k/master-tselnii-kokobolo.jpg",
         "wood": "кокоболо",
         "price": "400 $",
         "size": "~160 см",
@@ -373,49 +471,49 @@ window.CATALOG = [
     "range": "350–450 $",
     "variants": [
       {
-        "img": "img/models/master-128luks-amarant.jpg",
+        "img": "img/models/master/master-12-8-luks/2k/master-128luks-amarant.jpg",
         "wood": "амарант",
         "price": "350 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-128luks-venge.jpg",
+        "img": "img/models/master/master-12-8-luks/2k/master-128luks-venge.jpg",
         "wood": "венге",
         "price": "350 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-128luks-bokote-eben.jpg",
+        "img": "img/models/master/master-12-8-luks/2k/master-128luks-bokote-eben.jpg",
         "wood": "бокоте, эбен",
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-128luks-gombeiro.jpg",
+        "img": "img/models/master/master-12-8-luks/2k/master-128luks-gombeiro.jpg",
         "wood": "гомбейро",
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-128luks-zerikotte.jpg",
+        "img": "img/models/master/master-12-8-luks/2k/master-128luks-zerikotte.jpg",
         "wood": "зерикотте",
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-128luks-kokobolo.jpg",
+        "img": "img/models/master/master-12-8-luks/2k/master-128luks-kokobolo.jpg",
         "wood": "кокоболо",
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-128luks-palisandr.jpg",
+        "img": "img/models/master/master-12-8-luks/2k/master-128luks-palisandr.jpg",
         "wood": "палисандр",
         "price": "450 $",
         "size": "~160 см",
@@ -433,49 +531,49 @@ window.CATALOG = [
     "range": "300–400 $",
     "variants": [
       {
-        "img": "img/models/master-46masaranduba.jpg",
+        "img": "img/models/master/master-4-6/2k/master-46masaranduba.jpg",
         "wood": "масарандуба",
         "price": "300 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-46venge.jpg",
+        "img": "img/models/master/master-4-6/2k/master-46venge.jpg",
         "wood": "венге",
         "price": "300 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-46palisandr.jpg",
+        "img": "img/models/master/master-4-6/2k/master-46palisandr.jpg",
         "wood": "палисандр",
         "price": "400 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-46chernyi-grab.jpg",
+        "img": "img/models/master/master-4-6/2k/master-46chernyi-grab.jpg",
         "wood": "черный граб",
         "price": "300 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-46bokote-eben.jpg",
+        "img": "img/models/master/master-4-6/2k/master-46bokote-eben.jpg",
         "wood": "бокоте, эбен",
         "price": "350 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-46bokote.jpg",
+        "img": "img/models/master/master-4-6/2k/master-46bokote.jpg",
         "wood": "бокоте",
         "price": "350 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master-46gombeiro.jpg",
+        "img": "img/models/master/master-4-6/2k/master-46gombeiro.jpg",
         "wood": "гомбейро",
         "price": "400 $",
         "size": "~160 см",
@@ -493,21 +591,42 @@ window.CATALOG = [
     "range": "400–750 $",
     "variants": [
       {
-        "img": "img/models/tsvetok-4luchevoi-chernyi-grab-popugai.jpg",
+        "img": "img/models/drugie-modeli/tsvetok/2k/15-tsvetok-8-luchevoy-palisandr-2k.jpg",
+        "wood": "палисандр",
+        "price": "400 $",
+        "size": "163",
+        "weight": "~700"
+      },
+      {
+        "img": "img/models/drugie-modeli/tsvetok/2k/17-tsvetok-8-luchevoy-wenge-2k.jpg",
+        "wood": "венге",
+        "price": "400 $",
+        "size": "163",
+        "weight": "~700"
+      },
+      {
+        "img": "img/models/drugie-modeli/tsvetok/2k/18-tsvetok-8-luchevoy-antratsit-2k.jpg",
+        "wood": "антрацит",
+        "price": "400 $",
+        "size": "163",
+        "weight": "~700"
+      },
+      {
+        "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok-4luchevoi-chernyi-grab-popugai.jpg",
         "wood": "4 – лучевой черный граб Попугай",
         "price": "400 $",
         "size": "163",
         "weight": "~700"
       },
       {
-        "img": "img/models/tsvetok-4luchevoi-eben.jpg",
+        "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok-4luchevoi-eben.jpg",
         "wood": "4 – лучевой эбен",
         "price": "750 $",
         "size": "163",
         "weight": "~700"
       },
       {
-        "img": "img/models/tsvetok-4luchevoi-eben-popugai.jpg",
+        "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok-4luchevoi-eben-popugai.jpg",
         "wood": "4 – лучевой эбен Попугай",
         "price": "750 $",
         "size": "163",
@@ -525,14 +644,14 @@ window.CATALOG = [
     "range": "120–180 $",
     "variants": [
       {
-        "img": "img/models/konsyl-34laisvud.jpg",
+        "img": "img/models/drugie-modeli/konsul-3-4/2k/konsyl-34laisvud.jpg",
         "wood": "лайсвуд",
         "price": "120 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/konsyl-34chernyi-grab.jpg",
+        "img": "img/models/drugie-modeli/konsul-3-4/2k/konsyl-34chernyi-grab.jpg",
         "wood": "черный граб",
         "price": "180 $",
         "size": "~160 см",
@@ -550,14 +669,14 @@ window.CATALOG = [
     "range": "50–80 $",
     "variants": [
       {
-        "img": "img/models/junior-celnyi-4hperevoi.jpg",
+        "img": "img/models/drugie-modeli/junior/2k/junior-celnyi-4hperevoi.jpg",
         "wood": "цельный 4-х перьевой",
         "price": "70 $",
         "size": "~160 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/junior-razbornoi-4hperevoi.jpg",
+        "img": "img/models/drugie-modeli/junior/2k/junior-razbornoi-4hperevoi.jpg",
         "wood": "разборной 4-х перьевой",
         "price": "80 $",
         "size": "~160 см",
@@ -582,22 +701,8 @@ window.CATALOG = [
     "range": "999 $",
     "variants": [
       {
-        "img": "img/models/_placeholder.svg",
-        "wood": "999",
-        "price": "999 $",
-        "size": "999",
-        "weight": "999"
-      },
-      {
-        "img": "img/models/_placeholder.svg",
-        "wood": "999",
-        "price": "999 $",
-        "size": "999",
-        "weight": "999"
-      },
-      {
-        "img": "img/models/_placeholder.svg",
-        "wood": "999",
+        "img": "img/models/drugie-modeli/legenda/2k/16-legenda-wenge-2k.jpg",
+        "wood": "венге",
         "price": "999 $",
         "size": "999",
         "weight": "999"

@@ -10,11 +10,12 @@
   var LENS = 200;          // размер квадрата-лупы, px
   var GAP  = 16;           // зазор между курсором и низом лупы (под хвостик), px
 
-  // путь к high-res версии: img/models/foo.jpg -> img/models/upscale/foo.jpg
+  // путь к high-res (4k) версии:
+  // .../<модель>/2k/имя-2k.jpg -> .../<модель>/4k/имя-4k.jpg
+  // если 4k-версии нет (старые фото без суффикса) — вернётся тот же путь,
+  // resolveSource через onerror откатится на обычное фото.
   function hiResSrc(src) {
-    return src.replace(/(.*\/)?([^\/]+)$/, function (_, dir, file) {
-      return (dir || '') + 'upscale/' + file;
-    });
+    return src.replace(/\/2k\//, '/4k/').replace(/-2k(\.[a-z]+)$/i, '-4k$1');
   }
 
   // проверить, существует ли файл (для авто-подхвата апскейла)

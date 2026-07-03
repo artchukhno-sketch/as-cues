@@ -26,8 +26,9 @@ debug.log
 assets/Studio_product_photo_of_the_EX_Nano_Banana_2_67746.psd
 *.psd
 
-# Рабочая папка с исходниками фото (не для сайта)
+# Рабочая папка с исходниками фото и архив неиспользуемого (не для сайта)
 img/models/new/
+img/all-unused/
 
 # Dev notes (not for production)
 old-site.md

@@ -10,10 +10,10 @@
   // У «Кии» справа группы моделей; у остальных — краткое описание + переход.
   const catalogCats = [
     { key: 'kii', label: 'Кии', href: 'index.html#catalog', groups: [
-      { title: 'Стрелы', href: 'index.html#model-korona-4perjevaia', items: [
-        { label: 'Корона 4-перьевая стрела', href: 'index.html#model-korona-4perjevaia' },
-        { label: 'Корона 8-перьевая стрела', href: 'index.html#model-korona-vosmiperjevaia' },
-        { label: 'Корона 12-перьевая стрела', href: 'index.html#model-korona-12perjevaia' },
+      { title: 'Стрела Корона', href: 'index.html#model-korona-4perjevaia', items: [
+        { label: 'Стрела Корона 4-перьевая', href: 'index.html#model-korona-4perjevaia' },
+        { label: 'Стрела Корона 8-перьевая', href: 'index.html#model-korona-vosmiperjevaia' },
+        { label: 'Стрела Корона 12-перьевая', href: 'index.html#model-korona-12perjevaia' },
       ]},
       { title: 'Мастер', href: 'index.html#model-master-46', items: [
         { label: 'Мастер 4-6', href: 'index.html#model-master-46' },
