@@ -79,20 +79,6 @@ window.CATALOG = [
         "weight": "~700 г"
       },
       {
-        "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-kokobolo.jpg",
-        "wood": "кокоболо",
-        "price": "600 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-gombeiro.jpg",
-        "wood": "гомбейро",
-        "price": "600 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-zerikotte.jpg",
         "wood": "зерикотте",
         "price": "600 $",
@@ -167,13 +153,6 @@ window.CATALOG = [
         "weight": "~700 г"
       },
       {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-vosmiperjevaia-eben.jpg",
-        "wood": "эбен",
-        "price": "1050 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
         "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-vosmiperjevaia-chernyi-grab.jpg",
         "wood": "черный граб",
         "price": "750 $",
@@ -183,13 +162,6 @@ window.CATALOG = [
       {
         "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-vosmiperjevaia-palisandr.jpg",
         "wood": "палисандр",
-        "price": "750 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-vosmiperjevaia-kokobolo.jpg",
-        "wood": "кокоболо",
         "price": "750 $",
         "size": "~160 см",
         "weight": "~700 г"
