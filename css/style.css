@@ -1367,13 +1367,13 @@ body:has(> main > .page-head) { padding-top: 0; }
   margin-bottom: 10px;
   transition: color .25s var(--ease);
 }
-/* ссылки-якоря — inline-block, чтобы подчёркивание шло по ширине текста,
-   как в верхнем меню (.nav__item > a::after) */
-.footer__col a {
+/* текстовые ссылки — подчёркивание по ширине текста, как в верхнем меню
+   (.nav__item > a::after). Логотип (.brand) исключён. */
+.footer__col a:not(.brand) {
   position: relative;
   width: fit-content;
 }
-.footer__col a::after {
+.footer__col a:not(.brand)::after {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: -2px;
@@ -1383,8 +1383,8 @@ body:has(> main > .page-head) { padding-top: 0; }
   transform-origin: left;
   transition: transform .28s var(--ease);
 }
-.footer__col a:hover { color: var(--gold-2); }
-.footer__col a:hover::after { transform: scaleX(1); }
+.footer__col a:not(.brand):hover { color: var(--gold-2); }
+.footer__col a:not(.brand):hover::after { transform: scaleX(1); }
 .footer__bottom {
   display: flex;
   justify-content: space-between;
