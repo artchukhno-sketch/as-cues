@@ -73,6 +73,61 @@ if (burger && nav) {
   window.__observeReveals();
 })();
 
+// Ленивое видео — луупы в карточках грузятся и запускаются только когда
+// попадают в кадр. До этого видно постер-заглушку, трафик не тратится.
+// При системной настройке «уменьшить движение» видео не запускаем (только постер).
+(function () {
+  // ловим и одиночный формат (video[data-src]), и мультиформат (<source data-src>).
+  // Без :has() — собираем оба случая вручную, чтобы работало и в старых браузерах.
+  const set = new Set(document.querySelectorAll('video[data-src]'));
+  document.querySelectorAll('source[data-src]').forEach(s => {
+    if (s.parentElement && s.parentElement.tagName === 'VIDEO') set.add(s.parentElement);
+  });
+  const videos = Array.from(set);
+  if (!videos.length) return;
+
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return; // остаётся постер, движение отключено
+
+  const load = (v) => {
+    if (v.dataset.loaded) return;
+    v.dataset.loaded = '1';
+    if (v.dataset.src) {
+      v.src = v.dataset.src;                        // одиночный формат
+    } else {
+      // мультиформат: переносим data-src → src у каждого <source>, затем load()
+      v.querySelectorAll('source[data-src]').forEach(s => { s.src = s.dataset.src; });
+      v.load();
+    }
+    v.play().catch(() => {}); // автоплей без звука — браузеры разрешают
+  };
+
+  if (!('IntersectionObserver' in window)) {
+    videos.forEach(load);
+    return;
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { load(e.target); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.25 });
+  videos.forEach(v => io.observe(v));
+})();
+
+// Stagger — карточки в ряду появляются мягкой волной, друг за другом.
+// Ненавязчиво: только внутри сеток карточек, шаг маленький, максимум 4 ступени.
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const groups = document.querySelectorAll('.serv-grid, .feat-grid, .promo-grid, .cards, .value-grid');
+  groups.forEach(group => {
+    const items = Array.from(group.children).filter(c => c.classList.contains('reveal'));
+    items.forEach((el, i) => {
+      const step = Math.min(i, 4);              // не больше 4 ступеней задержки
+      if (step > 0) el.style.setProperty('--reveal-delay', (step * 0.09) + 's');
+    });
+  });
+})();
+
 // Закрывать остальные модели каталога при открытии одной (аккордеон)
 const models = document.querySelectorAll('details.model');
 models.forEach(m => {
