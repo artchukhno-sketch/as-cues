@@ -117,7 +117,7 @@
           <a class="lang__opt" href="#" lang="uk" title="Українська версія — скоро">UK</a>
           <a class="lang__opt" href="#" lang="en" title="English version — coming soon">EN</a>
         </div>
-        <a class="btn btn--gold" href="contacts.html#zayavka">Консультация</a>
+        <a class="btn btn--gold" href="contacts.html#zayavka">Связаться</a>
       </div>
       <button class="burger" aria-label="Меню" aria-expanded="false">
         <span></span><span></span><span></span>
