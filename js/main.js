@@ -3,15 +3,54 @@
 // Мобильное меню
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
+const isMobileNav = () => window.matchMedia('(max-width: 900px)').matches;
+
 if (burger && nav) {
   burger.addEventListener('click', () => {
     nav.classList.toggle('open');
     const open = nav.classList.contains('open');
     burger.setAttribute('aria-expanded', open);
+    // при открытии/закрытии меню всё свёрнуто: видны только разделы верхнего уровня
+    nav.querySelectorAll('.nav__item.is-open').forEach(el => el.classList.remove('is-open'));
+    if (open) {
+      nav.querySelectorAll('.cat-tab.is-active').forEach(t => t.classList.remove('is-active'));
+      nav.querySelectorAll('.cat-pane.is-active').forEach(p => p.classList.remove('is-active'));
+    }
   });
-  nav.querySelectorAll('a').forEach(a =>
-    a.addEventListener('click', () => nav.classList.remove('open'))
-  );
+
+  // На мобайле пункт с подменю (Каталог, Услуги) не уводит на страницу,
+  // а раскрывает список — навигация видна сразу, вложенное открывается по тапу.
+  nav.querySelectorAll('.nav__item--has-menu > a').forEach(link => {
+    link.addEventListener('click', e => {
+      if (!isMobileNav() || !nav.classList.contains('open')) return;
+      e.preventDefault();
+      link.closest('.nav__item').classList.toggle('is-open');
+    });
+  });
+
+  // Подразделы каталога (Кии/Чехлы/…): тап раскрывает список моделей этого раздела.
+  // У разделов без моделей (Чехлы, Аксессуары, Эксклюзив) — сразу переход на страницу.
+  nav.querySelectorAll('.cat-tab').forEach(tab => {
+    tab.addEventListener('click', e => {
+      if (!isMobileNav() || !nav.classList.contains('open')) return;
+      const key = tab.dataset.cat;
+      const pane = nav.querySelector(`.cat-pane[data-cat="${key}"]`);
+      const hasModels = pane && pane.querySelector('.cat-pane__groups');
+      if (!hasModels) return;           // нет вложенных моделей — обычный переход
+      e.preventDefault();
+      const wasActive = tab.classList.contains('is-active') && pane.classList.contains('is-active');
+      nav.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('is-active'));
+      nav.querySelectorAll('.cat-pane').forEach(p => p.classList.remove('is-active'));
+      if (!wasActive) {
+        tab.classList.add('is-active');
+        pane.classList.add('is-active');
+      }
+    });
+  });
+
+  // Клик по конечной ссылке (модель, услуга, страница) — закрываем меню
+  nav.querySelectorAll('.nav__menu a:not(.cat-tab), .nav__item:not(.nav__item--has-menu) > a')
+     .forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
 }
 
 // Поведение шапки: прячется при скролле вниз, появляется при скролле вверх,

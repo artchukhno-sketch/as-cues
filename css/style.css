@@ -1892,7 +1892,8 @@ body:has(> main > .page-head) { padding-top: 0; }
     justify-content: space-between;
   }
   .nav.open .nav__item > a::after { display: none; }
-  /* подменю на мобайле — раскрыто плоско, с отступом */
+
+  /* подменю свёрнуто по умолчанию — раскрывается тапом (класс is-open от JS) */
   .nav.open .nav__menu {
     position: static;
     transform: none;
@@ -1901,7 +1902,16 @@ body:has(> main > .page-head) { padding-top: 0; }
     pointer-events: auto;
     min-width: 0;
     padding-top: 0;
+    display: none;
   }
+  .nav.open .nav__item.is-open > .nav__menu { display: block; }
+  /* стрелка-указатель у раскрываемых пунктов */
+  .nav.open .nav__chev {
+    display: block;
+    transition: transform .2s ease;
+  }
+  .nav.open .nav__item.is-open > a .nav__chev { transform: rotate(180deg); }
+
   .nav.open .nav__menu-inner {
     background: transparent;
     border: 0;
@@ -1912,9 +1922,8 @@ body:has(> main > .page-head) { padding-top: 0; }
   .nav.open .nav__sublink { padding: 11px 0 11px 16px; border-radius: 0; }
   .nav.open .nav__sublink:hover { background: transparent; }
   .nav.open .nav__sublink small { color: var(--txt-mut); }
-  .nav.open .nav__chev { display: none; }
 
-  /* двухуровневый «Каталог» на мобайле — всё в столбик, без hover-переключения */
+  /* «Каталог» на мобайле: подразделы — текстовые ссылки с подчёркиванием, без боксов */
   .nav.open .nav__menu--mega { min-width: 0; transform: none; left: auto; }
   .nav.open .catmenu {
     display: block;
@@ -1922,29 +1931,33 @@ body:has(> main > .page-head) { padding-top: 0; }
     min-height: 0; padding: 4px 0 8px;
   }
   .nav.open .catmenu__tabs {
-    flex-direction: row; flex-wrap: wrap; gap: 8px;
-    background: transparent; border: 0; padding: 6px 0 10px 16px;
+    flex-direction: column; flex-wrap: nowrap; gap: 0;
+    background: transparent; border: 0; padding: 0;
   }
   .nav.open .cat-tab {
-    padding: 8px 14px; font-size: 14px;
-    border: 1px solid var(--line); border-radius: var(--r-sm);
-    background: var(--bone);
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 13px 0 13px 16px;
+    font-size: 15px; letter-spacing: .02em;
+    border: 0; border-radius: 0; background: transparent;
+    border-bottom: 1px solid var(--line);
+    color: var(--txt);
   }
-  .nav.open .cat-tab.is-active { background: var(--ink); color: #fff; }
-  .nav.open .cat-tab__arr { display: none; }
+  .nav.open .cat-tab.is-active { background: transparent; color: var(--txt); }
+  .nav.open .cat-tab__arr { display: block; opacity: .4; }
+  /* панели с моделями раскрываются только у активного подраздела */
   .nav.open .catmenu__panes { padding: 0; }
-  /* на мобайле показываем ВСЕ панели подряд (нет hover) */
-  .nav.open .cat-pane { display: block; margin-top: 4px; }
+  .nav.open .cat-pane { display: none; }
+  .nav.open .cat-pane.is-active { display: block; margin-top: 4px; }
   .nav.open .cat-pane__groups { display: block; }
   .nav.open .cat-pane__col { margin-bottom: 4px; }
   .nav.open .cat-pane__title {
-    font-size: 15px; padding: 12px 0 8px 16px; border-bottom: 0; margin-bottom: 0;
+    font-size: 14px; padding: 12px 0 8px 16px; border-bottom: 0; margin-bottom: 0;
+    color: var(--txt-mut); text-transform: uppercase; letter-spacing: .08em;
   }
   .nav.open .cat-pane__links { padding-left: 16px; }
   .nav.open .cat-pane__links a { padding: 9px 0; font-size: 14px; }
-  .nav.open .cat-pane__desc { padding: 6px 16px 12px; max-width: none; }
-  .nav.open .cat-pane__desc p { margin-bottom: 12px; }
-  .nav.open .cat-pane__go { padding-left: 0; }
+  /* описания разделов («Перейти в раздел →») на мобайле не нужны — ссылка уже в табе */
+  .nav.open .cat-pane__desc { display: none; }
 
   /* мобильный герой: видео фоном на всю область, приглушённое, текст поверх */
   .hero {
