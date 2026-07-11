@@ -2046,7 +2046,18 @@ body:has(> main > .page-head) { padding-top: 0; }
   .champ-grid {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 0;
+  }
+  /* hairline-разделитель между чемпионами — в айдентике сайта */
+  .champ-grid > .champ {
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid var(--line-d);
+  }
+  .champ-grid > .champ:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
   }
   .champ,
   .champ--w8, .champ--w7, .champ--w5, .champ--w4,
