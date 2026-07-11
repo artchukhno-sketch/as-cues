@@ -2078,13 +2078,17 @@ body:has(> main > .page-head) { padding-top: 0; }
   .champ--pair-right .champ__body::before { display: none; }
   .champ-sep { display: none; } /* разделители между рядами в столбик не нужны */
 
-  /* КНОПКИ НА МОБАЙЛЕ — всегда во всю ширину, в столбик.
+  /* КНОПКИ НА МОБАЙЛЕ — всегда во всю ширину.
      Узкий экран: кнопка по содержимому смотрится случайно прижатой к краю. */
-  .btn-row,
-  .steps-cta {
+  .btn-row {
     flex-direction: column;
     align-items: stretch;
   }
+  /* .steps-cta — это grid из 4 колонок (кнопка стоит в 4-й);
+     на мобайле схлопываем в одну колонку, иначе кнопка уезжает за экран */
+  .steps-cta { grid-template-columns: 1fr; }
+  .steps-cta .btn { grid-column: 1; }
+
   .btn-row .btn,
   .steps-cta .btn,
   .cta-block .btn {
