@@ -1821,6 +1821,9 @@ body:has(> main > .page-head) { padding-top: 0; }
   }
   .split { grid-template-columns: 1fr; }
   .split__media { order: -1; }
+  /* видео-макро: на мобайле колонка одна, тянуться не по чему —
+     задаём контейнеру пропорцию, иначе он схлопывается и видео не видно */
+  .split__media--video { aspect-ratio: 1 / 1; }
   .contact-grid { grid-template-columns: 1fr; }
 
   /* каталог: фото сверху, данные снизу */
