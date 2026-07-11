@@ -2048,11 +2048,11 @@ body:has(> main > .page-head) { padding-top: 0; }
     flex-direction: column;
     gap: 0;
   }
-  /* hairline-разделитель между чемпионами — в айдентике сайта */
+  /* hairline-разделитель между чемпионами — мягче, чем линии между секциями */
   .champ-grid > .champ {
     padding-bottom: 36px;
     margin-bottom: 36px;
-    border-bottom: 1px solid var(--line-d);
+    border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
   }
   .champ-grid > .champ:last-child {
     padding-bottom: 0;
