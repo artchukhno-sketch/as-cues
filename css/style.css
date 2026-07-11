@@ -1946,31 +1946,43 @@ body:has(> main > .page-head) { padding-top: 0; }
   .nav.open .cat-pane__desc p { margin-bottom: 12px; }
   .nav.open .cat-pane__go { padding-left: 0; }
 
+  /* мобильный герой: видео фоном на всю область, приглушённое, текст поверх */
   .hero {
-    min-height: auto;
+    min-height: 100svh;
     flex-direction: column;
     align-items: stretch;
-    padding-block: 32px 56px;
+    justify-content: flex-end;
+    /* сверху — запас под фикс-шапку (68px), чтобы кий из-под неё не срезался */
+    padding-block: calc(68px + 24px) 56px;
   }
   .hero__video {
-    position: relative;
-    height: 42vh;
-    max-height: 380px;
-    width: auto;
-    max-width: 86%;
-    right: auto;
-    top: auto;
+    position: absolute;
+    top: 68px;                 /* видео начинается под шапкой */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center top;
     transform: none;
-    margin: 0 auto 20px;
-    order: -1;
-    -webkit-mask-image: none;
-    mask-image: none;
+    opacity: .5;               /* приглушено — текст поверх читается */
+    -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 92%);
+    mask-image: linear-gradient(to bottom, #000 55%, transparent 92%);
   }
-  .hero__grad { display: none; }
+  /* затемняющий слой поверх видео — под текст */
+  .hero__grad {
+    display: block;
+    background: linear-gradient(to bottom, rgba(0,0,0,.35) 0%, rgba(0,0,0,.7) 55%, #000 92%);
+  }
   .hero__inner { display: flex; flex-direction: column; }
   .hero__content { max-width: none; }
   .hero h1 { font-size: clamp(40px, 13vw, 60px); }
   .hero__meta { margin-top: 36px; }
+  /* кнопки героя — на всю ширину экрана */
+  .hero .btn-row { flex-direction: column; align-items: stretch; }
+  .hero .btn-row .btn { width: 100%; min-width: 0; justify-content: center; }
 
   .col-2 { columns: 1; }
 
