@@ -2027,7 +2027,9 @@ body:has(> main > .page-head) { padding-top: 0; }
   .model__price small { text-align: left; }
   .model__toggle { grid-column: 2; grid-row: 3; }
 
-  .footer__top { grid-template-columns: 1fr; gap: 28px; }
+  /* футер на телефоне — два столбика; блок с логотипом и соцсетями во всю ширину */
+  .footer__top { grid-template-columns: 1fr 1fr; gap: 28px 24px; }
+  .footer__brand-col { grid-column: 1 / -1; }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
 
   /* чемпионы: мобайл — один столбец, горизонтальные карточки становятся вертикальными */
