@@ -2074,6 +2074,17 @@ body:has(> main > .page-head) { padding-top: 0; }
   .champ__body { display: block; }
   .champ--pair-right .champ__body::before { display: none; }
   .champ-sep { display: none; } /* разделители между рядами в столбик не нужны */
+
+  /* аксессуары на мобайле — одна колонка: длинные названия не переносятся,
+     цены и линии выравниваются ровно (в две колонки строки разъезжались) */
+  .acc-grid,
+  .acc-grid--wide { grid-template-columns: 1fr; }
+  /* заголовок группы и описание — в столбик, а не в ряд */
+  .model-group__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
 }
 
 /* ============================================================
