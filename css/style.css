@@ -2078,6 +2078,23 @@ body:has(> main > .page-head) { padding-top: 0; }
   .champ--pair-right .champ__body::before { display: none; }
   .champ-sep { display: none; } /* разделители между рядами в столбик не нужны */
 
+  /* КНОПКИ НА МОБАЙЛЕ — всегда во всю ширину, в столбик.
+     Узкий экран: кнопка по содержимому смотрится случайно прижатой к краю. */
+  .btn-row,
+  .steps-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-row .btn,
+  .steps-cta .btn,
+  .cta-block .btn {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+  }
+  /* мессенджеры/соцсети остаются сеткой по 2 — там короткие подписи */
+  .social-grid { grid-template-columns: 1fr 1fr; }
+
   /* аксессуары на мобайле — одна колонка: длинные названия не переносятся,
      цены и линии выравниваются ровно (в две колонки строки разъезжались) */
   .acc-grid,
