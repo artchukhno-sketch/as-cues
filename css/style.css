@@ -1967,14 +1967,14 @@ body:has(> main > .page-head) { padding-top: 0; }
     object-fit: cover;
     object-position: center top;
     transform: none;
-    opacity: .5;               /* приглушено — текст поверх читается */
+    opacity: .72;              /* приглушено, но кий хорошо виден */
     -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 92%);
     mask-image: linear-gradient(to bottom, #000 55%, transparent 92%);
   }
   /* затемняющий слой поверх видео — под текст */
   .hero__grad {
     display: block;
-    background: linear-gradient(to bottom, rgba(0,0,0,.35) 0%, rgba(0,0,0,.7) 55%, #000 92%);
+    background: linear-gradient(to bottom, rgba(0,0,0,.12) 0%, rgba(0,0,0,.55) 58%, #000 94%);
   }
   .hero__inner { display: flex; flex-direction: column; }
   .hero__content { max-width: none; }
