@@ -58,7 +58,7 @@
     if (i.catalog) {
       // левый столбик категорий (первая активна по умолчанию)
       const tabs = catalogCats.map((cat, idx) => `
-        <a class="cat-tab${idx===0?' is-active':''}" href="${cat.href}" data-cat="${cat.key}">
+        <a class="cat-tab${idx===0?' is-active':''}${cat.groups?' cat-tab--expandable':''}" href="${cat.href}" data-cat="${cat.key}">
           <span>${cat.label}</span>
           <svg class="cat-tab__arr" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 2l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>`).join('');

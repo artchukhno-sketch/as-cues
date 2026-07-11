@@ -1953,7 +1953,15 @@ body:has(> main > .page-head) { padding-top: 0; }
     color: var(--txt);
   }
   .nav.open .cat-tab.is-active { background: transparent; color: var(--txt); }
-  .nav.open .cat-tab__arr { display: block; opacity: .4; }
+  /* стрелка честно показывает поведение:
+     раскрываемый раздел (Кии) — шеврон вниз и переворот при раскрытии,
+     остальные (Чехлы/Аксессуары/Эксклюзив) — стрелка вправо = переход на страницу */
+  .nav.open .cat-tab__arr {
+    display: block; opacity: .4;
+    transition: transform .2s ease;
+  }
+  .nav.open .cat-tab--expandable .cat-tab__arr { transform: rotate(90deg); }
+  .nav.open .cat-tab--expandable.is-active .cat-tab__arr { transform: rotate(-90deg); }
   /* панели с моделями раскрываются только у активного подраздела */
   .nav.open .catmenu__panes { padding: 0; }
   .nav.open .cat-pane { display: none; }
