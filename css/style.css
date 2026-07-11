@@ -2040,57 +2040,29 @@ body:has(> main > .page-head) { padding-top: 0; }
   }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
 
-  /* ЧЕМПИОНЫ НА МОБАЙЛЕ — единая раскладка для всех карточек:
-     один столбец, фото сверху, текст под ним. Сбрасываем все десктопные
-     grid/flex-раскладки (photo-right, photo-left, row, пары), чтобы порядок
-     элементов брался из разметки (в ней фото идёт первым). */
-  .champ-grid { grid-template-columns: 1fr; }
-
-  .champ,
-  .champ--w8, .champ--w7, .champ--w5, .champ--w4,
-  .champ--full,
-  .champ--row,
-  .champ--photo-right,
-  .champ--photo-left {
+  /* ЧЕМПИОНЫ НА МОБАЙЛЕ — простой одинаковый паттерн для всех карточек:
+     контейнер — обычный столбик, карточка — блок: фото сверху, текст снизу.
+     Десктопная 12-колоночная сетка полностью отключается. */
+  .champ-grid {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    gap: 16px;
-    grid-column: 1 / -1;
-    grid-template-columns: none;
+    gap: 40px;
   }
-
-  /* сброс десктопных позиций внутри карточек */
-  .champ__photo,
-  .champ__body,
-  .champ--row .champ__photo,
-  .champ--row .champ__body,
-  .champ--photo-right .champ__photo,
-  .champ--photo-right .champ__body,
-  .champ--photo-left .champ__photo,
-  .champ--photo-left .champ__body {
-    grid-column: auto;
-    grid-row: auto;
-    flex: none;
-    order: 0;
+  .champ,
+  .champ--w8, .champ--w7, .champ--w5, .champ--w4,
+  .champ--full, .champ--row,
+  .champ--photo-right, .champ--photo-left {
+    display: block;
   }
-
-  /* фото: всегда сверху, естественные пропорции, фикс-высота снята */
-  .champ__photo,
-  .champ--w8 .champ__photo,
-  .champ--w7 .champ__photo,
-  .champ--w5 .champ__photo,
-  .champ--w4 .champ__photo,
-  .champ--row .champ__photo,
-  .champ--photo-right .champ__photo,
-  .champ--photo-left .champ__photo {
+  .champ__photo {
+    width: 100%;
     height: auto;
     aspect-ratio: 3/4;
-    margin-bottom: 0;
-    width: 100%;
+    margin-bottom: 16px;
   }
-  .champ__body { justify-content: flex-start; }
-  .champ--pair-right .champ__body::before { display: none; } /* в один столбец линия не нужна */
+  .champ__body { display: block; }
+  .champ--pair-right .champ__body::before { display: none; }
+  .champ-sep { display: none; } /* разделители между рядами в столбик не нужны */
 }
 
 /* ============================================================
