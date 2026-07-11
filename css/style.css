@@ -2010,10 +2010,14 @@ body:has(> main > .page-head) { padding-top: 0; }
     display: block;
     background: linear-gradient(to bottom, rgba(0,0,0,.12) 0%, rgba(0,0,0,.55) 58%, #000 94%);
   }
+  /* герой по центру — совпадает с осью кия в кадре, композиция собраннее */
   .hero__inner { display: flex; flex-direction: column; }
-  .hero__content { max-width: none; }
+  .hero__content { max-width: none; text-align: center; }
   .hero h1 { font-size: clamp(40px, 13vw, 60px); }
-  .hero__meta { margin-top: 36px; }
+  .hero__sub { margin-inline: auto; max-width: 34ch; }
+  /* eyebrow со штрихом — центрируем вместе со штрихом */
+  .hero .eyebrow { justify-content: center; }
+  .hero__meta { margin-top: 36px; justify-content: center; }
   /* кнопки героя — на всю ширину экрана */
   .hero .btn-row { flex-direction: column; align-items: stretch; }
   .hero .btn-row .btn { width: 100%; min-width: 0; justify-content: center; }
