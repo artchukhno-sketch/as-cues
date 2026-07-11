@@ -1871,12 +1871,12 @@ body:has(> main > .page-head) { padding-top: 0; }
 
   /* мобильное меню */
   .nav.open {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* главные разделы 2×2 — компактно */
+    column-gap: 20px;
     position: fixed;
     inset: 68px 0 auto 0;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
+    align-items: start;
     background: var(--paper);
     border-bottom: 1px solid var(--line);
     padding: 8px var(--gutter) 24px;
@@ -1885,13 +1885,22 @@ body:has(> main > .page-head) { padding-top: 0; }
     overflow-y: auto;
   }
   .nav.open .nav__item { position: static; }
+  /* раскрытый пункт занимает обе колонки — вложенный список во всю ширину */
+  .nav.open .nav__item.is-open { grid-column: 1 / -1; }
   .nav.open .nav__item > a {
-    padding: 16px 0;
+    padding: 15px 0;
     border-bottom: 1px solid var(--line);
-    font-size: 17px;
+    font-size: 16px;
     justify-content: space-between;
   }
   .nav.open .nav__item > a::after { display: none; }
+  /* меню на белом фоне — текст всегда тёмный, даже когда шапка «над героем» */
+  .nav.open,
+  .nav.open .nav__item > a,
+  .nav.open .cat-tab,
+  .nav.open .nav__sublink,
+  .nav.open .cat-pane__links a { color: var(--txt); }
+  .nav.open .cat-pane__title { color: var(--txt-mut); }
 
   /* подменю свёрнуто по умолчанию — раскрывается тапом (класс is-open от JS) */
   .nav.open .nav__menu {
@@ -1931,12 +1940,13 @@ body:has(> main > .page-head) { padding-top: 0; }
     min-height: 0; padding: 4px 0 8px;
   }
   .nav.open .catmenu__tabs {
-    flex-direction: column; flex-wrap: nowrap; gap: 0;
-    background: transparent; border: 0; padding: 0;
+    display: grid; grid-template-columns: 1fr 1fr;  /* подразделы 2×2 */
+    column-gap: 20px; gap: 0 20px;
+    background: transparent; border: 0; padding: 0 0 0 16px;
   }
   .nav.open .cat-tab {
     display: flex; justify-content: space-between; align-items: center;
-    padding: 13px 0 13px 16px;
+    padding: 12px 0;
     font-size: 15px; letter-spacing: .02em;
     border: 0; border-radius: 0; background: transparent;
     border-bottom: 1px solid var(--line);
