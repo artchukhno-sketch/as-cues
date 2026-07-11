@@ -2029,6 +2029,15 @@ body:has(> main > .page-head) { padding-top: 0; }
 
   /* футер на телефоне — все колонки в общей сетке 2×2, включая лого и соцсети */
   .footer__top { grid-template-columns: 1fr 1fr; gap: 28px 24px; }
+  /* лого и соцсети выравниваем влево — как остальные колонки */
+  .footer__brand-col { align-items: flex-start; text-align: left; }
+  .footer__social { align-items: flex-start; }
+  /* «СОЦСЕТИ» — тот же вид, что у заголовков других колонок (h4) */
+  .footer__social-label {
+    font-size: 14px;
+    letter-spacing: .18em;
+    color: var(--gold-2);
+  }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
 
   /* чемпионы: мобайл — один столбец, горизонтальные карточки становятся вертикальными */
