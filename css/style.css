@@ -21,8 +21,8 @@
   --txt-mut:#7C766B;  /* приглушённый текст */
   --txt-inv:#EDE8DE;  /* текст на тёмном */
   --txt-inv-mut:#B3AC9E;  /* приглушённый текст на тёмном — контрастнее */
-  --accent-gold:      #A8884E; /* золото на тёмном (герой, футер) */
-  --accent-dark:      #8C7038; /* золото-акцент на светлом, точечно */
+  --accent-gold:      #D99A2B; /* янтарь-мёд на тёмном (герой, футер) */
+  --accent-dark:      #B87A1E; /* янтарь глубже — акцент на светлом, точечно */
 
   --maxw: 1280px;
   --gutter: clamp(20px, 5vw, 72px);
@@ -1042,7 +1042,7 @@ body:has(> main > .page-head) { padding-top: 0; }
 .serv-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(32px, 4vw, 56px);
+  gap: 24px;
 }
 .serv {
   display: flex;
@@ -1055,15 +1055,6 @@ body:has(> main > .page-head) { padding-top: 0; }
   flex-direction: column;
   flex: 1;
   position: relative;
-}
-/* вертикальный разделитель между карточками — только вдоль тела (от фото вниз) */
-.serv + .serv .serv__body::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  bottom: 0;
-  left: calc(clamp(32px, 4vw, 56px) / -2 - 0.5px);
-  border-left: 1px solid var(--line);
 }
 /* номер + заголовок над фото */
 .serv__head {
@@ -1225,7 +1216,7 @@ body:has(> main > .page-head) { padding-top: 0; }
   border-bottom-color: var(--gold);
   background: rgba(0,0,0,.025);
 }
-.field textarea { resize: none; min-height: 138px; }
+.field textarea { resize: none; min-height: 128px; }
 .form__note { font-size: 13px; color: var(--txt-mut); }
 
 /* ============================================================
@@ -1606,36 +1597,32 @@ body:has(> main > .page-head) { padding-top: 0; }
 .model-group__head h2 { font-size: clamp(26px, 3.2vw, 36px); } /* подзаголовок группы — шкала subhead */
 .model-group__head p { font-size: 14.5px; color: var(--txt-mut); }
 
-/* каталог аксессуаров — сетка карточек: фото + название + цена */
+/* каталог аксессуаров — прайс-строки: название слева, цена справа, линия между */
 .acc-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: clamp(16px, 2vw, 24px);
-  margin-top: 28px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: clamp(40px, 6vw, 80px);
+  margin-top: 24px;
 }
-.acc-grid--wide { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
-.acc-item { display: flex; flex-direction: column; }
-.acc-item__photo {
-  aspect-ratio: 1;
-  display: flex; align-items: center; justify-content: center;
-  overflow: hidden;
+/* мел, резина и др. одиночные позиции — в один столбец на всю ширину */
+.acc-grid--wide { grid-template-columns: 1fr; }
+.acc-item {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
 }
-.acc-grid--wide .acc-item__photo { aspect-ratio: 16/10; }
-.acc-item__photo img { width: 100%; height: 100%; object-fit: contain; }
-/* фото-предметы во всю ширину блока (тренажёр и др. на цветном фоне) */
-.acc-grid--bare .acc-item__photo img { object-fit: cover; }
 .acc-item__name {
   font-family: var(--serif);
   font-size: clamp(16px, 1.5vw, 19px);
   text-transform: uppercase; letter-spacing: .01em;
   color: var(--txt);
-  margin-top: 14px;
 }
 .acc-item__price {
   font-family: var(--sans); font-weight: 600;
   font-size: 15px;
-  color: var(--rose);
-  margin-top: 4px;
+  color: var(--txt);
+  white-space: nowrap;
 }
 .acc-item__price small { font-weight: 400; color: var(--txt-mut); }
 .acc-item__desc { font-size: 13px; color: var(--txt-mut); margin-top: 6px; line-height: 1.5; }
@@ -1823,8 +1810,7 @@ body:has(> main > .page-head) { padding-top: 0; }
   .champ, .champ--w8, .champ--w7, .champ--w5, .champ--w4 { grid-column: span 1; }
   .champ--full { grid-column: 1 / -1; }
   .serv-grid { grid-template-columns: 1fr; gap: clamp(32px, 6vw, 48px); }
-  /* на мобильном делитель горизонтальный — над всей карточкой */
-  .serv + .serv .serv__body::before { display: none; }
+  /* на мобильном карточки в столбик — горизонтальный делитель между ними */
   .serv + .serv::before {
     content: "";
     position: absolute;

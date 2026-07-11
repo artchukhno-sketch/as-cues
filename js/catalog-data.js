@@ -211,6 +211,55 @@ window.CATALOG = [
         "price": "1000 $",
         "size": "~160 см",
         "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12perjevaia-amarant-chernyi-grab.jpg",
+        "wood": "амарант, черный граб",
+        "price": "1000 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12perjevaia-makasar.jpg",
+        "wood": "макасар",
+        "price": "1000 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12perjevaia-palisandr-eben.jpg",
+        "wood": "палисандр, эбен",
+        "price": "1500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12perjevaia-chernyi-grab.jpg",
+        "wood": "черный граб",
+        "price": "1000 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12perjevaia-kokobolo-eben.jpg",
+        "wood": "кокоболо, эбен",
+        "price": "1500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12perjevaia-eben-amarello.jpg",
+        "wood": "эбен, амарелло",
+        "price": "1500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12perjevaia-bokote-eben.jpg",
+        "wood": "бокоте, эбен",
+        "price": "1500 $",
+        "size": "~160 см",
+        "weight": "~700 г"
       }
     ]
   },
@@ -490,6 +539,27 @@ window.CATALOG = [
         "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
+      },
+      {
+        "img": "img/models/master/master-12-8-luks/2k/master-128luks-eben.jpg",
+        "wood": "эбен",
+        "price": "450 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/master/master-12-8-luks/2k/master-128luks-eben-amarello.jpg",
+        "wood": "эбен, амарелло",
+        "price": "450 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/master/master-12-8-luks/2k/master-128luks-chernyi-grab.jpg",
+        "wood": "черный граб",
+        "price": "450 $",
+        "size": "~160 см",
+        "weight": "~700 г"
       }
     ]
   },
@@ -548,6 +618,13 @@ window.CATALOG = [
         "img": "img/models/master/master-4-6/2k/master-46gombeiro.jpg",
         "wood": "гомбейро",
         "price": "400 $",
+        "size": "~160 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/master/master-4-6/2k/master-46eben.jpg",
+        "wood": "эбен",
+        "price": "450 $",
         "size": "~160 см",
         "weight": "~700 г"
       }
