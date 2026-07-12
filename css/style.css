@@ -1821,16 +1821,9 @@ body:has(> main > .page-head) { padding-top: 0; }
   }
   .split { grid-template-columns: 1fr; }
   .split__media { order: -1; }
-  /* Логотип на «Оптовикам»: в одну колонку он растягивался на весь экран.
-     Уводим наверх и делаем компактным знаком — заголовок обтекает его слева,
-     как марка на шапке письма. */
-  .split__logo {
-    order: -1;
-    justify-content: flex-end;
-    align-self: auto;
-    margin-bottom: -8px;
-  }
-  .split__logo img { height: auto; width: clamp(72px, 22vw, 104px); max-height: none; }
+  /* Логотип на «Оптовикам» — только на десктопе, где он держит правую колонку.
+     На мобильном колонки нет: он ничего не сообщает, а место занимает. */
+  .split__logo { display: none; }
   /* видео-макро: на мобайле колонка одна, тянуться не по чему —
      задаём контейнеру пропорцию, иначе он схлопывается и видео не видно */
   .split__media--video { aspect-ratio: 1 / 1; }
