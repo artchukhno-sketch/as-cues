@@ -1942,17 +1942,33 @@ body:has(> main > .page-head) { padding-top: 0; }
 
   /* «Каталог» на мобайле: подразделы — текстовые ссылки с подчёркиванием, без боксов */
   .nav.open .nav__menu--mega { min-width: 0; transform: none; left: auto; }
+  /* Аккордеон: содержимое раздела раскрывается СРАЗУ ПОД своим табом.
+     В разметке табы и панели лежат в двух обёртках (для десктопа: слева
+     колонка табов, справа панель). На мобильном распускаем обёртки через
+     display: contents и раздаём order, иначе модели киёв оказывались ниже
+     «Чехлов», «Аксессуаров» и «Эксклюзива» — оторванными от того, что нажали. */
   .nav.open .catmenu {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background: transparent; border: 0; box-shadow: none; border-radius: 0;
     min-height: 0; padding: 4px 0 8px;
   }
-  /* подразделы — в столбец: в две колонки раскрытие «Киёв» перекидывало
-     соседние пункты между колонками и они прыгали */
-  .nav.open .catmenu__tabs {
-    display: block;
-    background: transparent; border: 0; padding: 0 0 0 16px;
-  }
+  .nav.open .catmenu__tabs,
+  .nav.open .catmenu__panes { display: contents; }
+
+  /* Кии(1) → панель Киёв(2) → Чехлы(3) → Аксессуары(4) → Эксклюзив(5).
+     Порядок задаём вручную: cat-tab и cat-pane идут парами по data-cat. */
+  .nav.open .cat-tab[data-cat="kii"]         { order: 1; }
+  .nav.open .cat-pane[data-cat="kii"]        { order: 2; }
+  .nav.open .cat-tab[data-cat="cases"]       { order: 3; }
+  .nav.open .cat-pane[data-cat="cases"]      { order: 4; }
+  .nav.open .cat-tab[data-cat="accessories"] { order: 5; }
+  .nav.open .cat-pane[data-cat="accessories"]{ order: 6; }
+  .nav.open .cat-tab[data-cat="exclusive"]   { order: 7; }
+  .nav.open .cat-pane[data-cat="exclusive"]  { order: 8; }
+
+  /* отступ слева, который раньше давала обёртка табов */
+  .nav.open .cat-tab { margin-left: 16px; }
   .nav.open .cat-tab {
     display: flex; justify-content: space-between; align-items: center;
     padding: 12px 0;
