@@ -2207,18 +2207,37 @@ body:has(.header--hidden) .catalog-jump { top: 24px; }
 }
 
 @media (max-width: 900px) {
-  /* на мобильном — по центру внизу: не спорит с шапкой и попадает под большой палец */
+  /* На мобильном кнопка сжимается в ярлычок, приклеенный к правому краю экрана:
+     панель быстрой навигации выезжает справа, и ярлычок торчит ровно оттуда —
+     жест и результат совпадают. Раньше это была широкая белая кнопка по центру
+     внизу: она читалась как ещё один кусок контента и никуда не указывала.
+     По вертикали — низко, под большим пальцем: фото киёв занимают середину
+     карточки во всю ширину, и ярлычок посередине экрана ложился прямо на кий. */
   .catalog-jump {
     top: auto;
-    bottom: 20px;
+    bottom: calc(24px + env(safe-area-inset-bottom));
+    left: auto;
     right: 0;
-    justify-content: center;
-    transform: translateY(8px);
+    justify-content: flex-end;
+    transform: translateX(8px);      /* выезжает из-за края, а не сверху */
   }
   .catalog-jump.is-visible { transform: none; }
   body:has(.header--hidden) .catalog-jump { top: auto; }
-  /* внизу поверх контента — нужна лёгкая тень, иначе кнопка сливается с фото кия */
-  .catalog-jump .quicknav-open { box-shadow: 0 6px 24px rgba(14,13,11,.16); }
+
+  .catalog-jump .quicknav-open {
+    gap: 8px;
+    padding: 12px 14px;
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+    border-right: none;              /* прижат к краю — правой грани нет */
+    border-radius: 4px 0 0 4px;      /* скруглён только со стороны контента */
+    box-shadow: -6px 4px 20px rgba(14,13,11,.22);
+    backdrop-filter: none;           /* заливка непрозрачная, блюр не нужен */
+  }
+  /* текст прячем — остаются иконка списка и число: ярлычок не заслоняет кий */
+  .catalog-jump .quicknav-open__label { display: none; }
+  .catalog-jump .quicknav-open__icon { display: block; }
 }
 .quicknav-open {
   display: inline-flex; align-items: center; gap: 6px;
@@ -2232,6 +2251,8 @@ body:has(.header--hidden) .catalog-jump { top: 24px; }
 .quicknav-open:hover { background: var(--ink); color: #fff; }
 /* число — часть текста: тот же шрифт, размер и цвет, что у надписи */
 .quicknav-open__count { font: inherit; color: inherit; }
+/* иконка списка нужна только ярлычку на мобильном (см. медиазапрос выше) */
+.quicknav-open__icon { display: none; width: 15px; height: 15px; flex: none; }
 
 /* ---- Панель быстрой навигации (выезжает справа) ---- */
 .quicknav {

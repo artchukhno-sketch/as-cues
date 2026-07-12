@@ -62,10 +62,14 @@
       <!-- каталог рендерится из js/catalog-data.js -->
       <div id="catalog-root"></div>
     </div>
-    <!-- липкая кнопка: видна, пока каталог в кадре (js/main.js) -->
+    <!-- липкая кнопка: видна, пока каталог в кадре (js/main.js).
+         На мобильном сжимается в ярлычок у правого края — оттуда же выезжает панель. -->
     <div class="catalog-jump">
-      <button type="button" class="quicknav-open" aria-haspopup="dialog">
-        Все модели <span class="quicknav-open__count">11</span>
+      <button type="button" class="quicknav-open" aria-haspopup="dialog" aria-label="Все модели">
+        <svg class="quicknav-open__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <path d="M1 3h14M1 8h14M1 13h14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+        </svg>
+        <span class="quicknav-open__label">Все модели</span> <span class="quicknav-open__count">11</span>
       </button>
     </div>
   </section>
