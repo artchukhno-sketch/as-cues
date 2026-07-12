@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AS Cues — майстерня різьблених київ ручної роботи | Дніпро</title>
+<meta name="description" content="Майстерня «АС»: різьблені киї для більярду ручної роботи з 2000 року. Ебен, палісандр, інкрустація сріблом і бивнем. Киї чемпіонів світу та України.">
+<meta property="og:title" content="AS Cues — майстерня різьблених київ ручної роботи">
+<meta property="og:description" content="Кий як витвір майстра. Ручна робота з 2000 року.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/">
+<link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/">
+<link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/">
+<link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+
+<main>
+  <!-- ГЕРОЙ -->
+  <section class="hero">
+    <video class="hero__video" src="../assets/video/cue-rotate.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="hero__grad"></div>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow">Авторські більярдні киї</span>
+        <h1>Кий як <em>шедевр</em></h1>
+        <p class="hero__sub">Киї для більярду — від рядових моделей до колекційних. Добираємо дерево, баланс і вагу під вашу гру.</p>
+        <div class="btn-row">
+          <a class="btn btn--gold" href="#catalog">Дивитися каталог</a>
+          <a class="btn btn--ghost" href="contacts.html#zayavka">Зв’язатися</a>
+        </div>
+        <div class="hero__meta">
+          <div><div class="num">25</div><div class="lbl">років</div></div>
+          <div><div class="num">18</div><div class="lbl">моделей</div></div>
+          <div><div class="num">15+</div><div class="lbl">порід дерева</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАТАЛОГ (главное продающее — сразу после героя) -->
+  <section class="section section--tight" id="catalog">
+    <div class="wrap">
+      <div class="catalog-head reveal">
+        <div>
+          <span class="eyebrow">Модельний ряд</span>
+          <h2 style="margin-top:16px">Каталог київ</h2>
+        </div>
+        <button type="button" class="quicknav-open" aria-haspopup="dialog">
+          Усі моделі <span class="quicknav-open__count">18</span>
+        </button>
+      </div>
+      <!-- каталог рендерится из js/catalog-data.js -->
+      <div id="catalog-root"></div>
+    </div>
+  </section>
+
+  <!-- Панель быстрой навигации (выезжает справа) -->
+  <div class="quicknav" id="quicknav" aria-hidden="true">
+    <div class="quicknav__overlay" data-quicknav-close></div>
+    <aside class="quicknav__panel" role="dialog" aria-modal="true" aria-label="Усі моделі">
+      <div class="quicknav__head">
+        <span class="quicknav__title">Усі моделі</span>
+        <button type="button" class="quicknav__close" aria-label="Закрити" data-quicknav-close>&times;</button>
+      </div>
+      <nav class="quicknav__list" id="quicknav-list"><!-- список из catalog-data.js --></nav>
+    </aside>
+  </div>
+
+  <!-- О МАСТЕРСКОЙ -->
+  <section class="section">
+    <div class="wrap reveal">
+      <div class="brand-block">
+        <span class="eyebrow">Бренд</span>
+        <h2>Ремесло,<br>вивірене часом</h2>
+        <div class="brand-banner">
+          <img src="../img/decor/about-us-heading.jpg" alt="Майстерня «АС»: більярдні киї ручної роботи на столі в залі">
+        </div>
+        <div class="brand-block__text brand-block__text--2">
+          <div class="brand-col">
+            <div class="brand-col__head"><span class="brand-col__num">01</span><h3 class="brand-col__title">Історія</h3></div>
+            <p>Із 2000 року майстерня «АС» виробляє більярдні киї ручної роботи. Сьогодні це бренд із власним іменем — киї-шедеври, які купують і колекціонують нарівні з вартістю самого більярдного столу.</p>
+          </div>
+          <div class="brand-col">
+            <div class="brand-col__head"><span class="brand-col__num">02</span><h3 class="brand-col__title">Підхід</h3></div>
+            <p>Найкращі киї для піраміди ручної роботи, величезний діапазон цінових категорій. Виготовимо кий будь-якого розміру та маси. І ніколи не відмовляємося від своєї продукції: будь-яку частину полагодимо, замінимо або доопрацюємо.</p>
+          </div>
+        </div>
+        <div class="btn-row" style="margin-top:28px">
+          <a class="btn btn--ink" href="about.html">Про бренд і чемпіонів</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- УСЛУГИ -->
+  <section class="section">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <span class="eyebrow">Після покупки</span>
+        <h2>Сервіс на все життя кия</h2>
+      </div>
+      <div class="serv-grid">
+        <div class="serv reveal">
+          <div class="serv__head"><span class="serv__num">01</span><h3>Ремонт і доопрацювання</h3></div>
+          <div class="serv__media">
+            <video class="serv__video" muted loop playsinline preload="none"
+                   poster="../img/decor/banners/service-repair-poster.jpg"
+                   data-src="../img/decor/craftsman_cue_loop.mp4"
+                   aria-label="Майстер доопрацьовує більярдний кий"></video>
+          </div>
+          <div class="serv__body">
+            <p>Коригування ваги, заміна наклейок, скрутки, шафта, бамперної чашки. Рихтування та переполірування. Будь-яке пошкодження можна виправити.</p>
+            <a class="arrow-link" href="services.html#remont">Прайс на ремонт</a>
+          </div>
+        </div>
+        <div class="serv reveal">
+          <div class="serv__head"><span class="serv__num">02</span><h3>Програма «Апгрейд»</h3></div>
+          <div class="serv__media">
+            <video class="serv__video" muted loop playsinline preload="none"
+                   poster="../img/decor/banners/service-upgrade-poster.jpg"
+                   data-src="../img/decor/cue-upgrade-loop.mp4"
+                   aria-label="Бюджетний і преміальний кий на сукні — обмін із доплатою"></video>
+          </div>
+          <div class="serv__body">
+            <p>Хочете кий дорожчий, але не знаєте, що робити зі старим? Принесіть — оцінимо, доберемо новий, доплатите лише різницю.</p>
+            <a class="arrow-link" href="services.html#upgrade">Як це працює</a>
+          </div>
+        </div>
+        <div class="serv reveal">
+          <div class="serv__head"><span class="serv__num">03</span><h3>Кий під вас</h3></div>
+          <div class="serv__media">
+            <video class="serv__video" muted loop playsinline preload="none"
+                   poster="../img/decor/banners/service-hand-poster.jpg"
+                   aria-label="Більярдний кий ручної роботи в руці гравця">
+              <source data-src="../img/decor/cue-aiming-loop.webm" type="video/webm">
+              <source data-src="../img/decor/cue-aiming-loop.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="serv__body">
+            <p>Дерево, баланс, довжина та вага добираються індивідуально на консультації з менеджером. Це не товар із полиці — це ваш інструмент.</p>
+            <a class="arrow-link" href="contacts.html#zayavka">Отримати консультацію</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРИ ПОКУПКЕ -->
+  <section class="section">
+    <div class="wrap reveal">
+      <div class="section-head reveal">
+        <span class="eyebrow">Під час покупки</span>
+        <h2>Бонуси та вигода</h2>
+      </div>
+      <div class="promo-grid">
+        <div class="promo-item">
+          <span class="promo-item__num">01</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">Замовлення від 300 $</span>
+            <span class="promo-item__bonus">Безкоштовна доставка Україною за наш рахунок</span>
+          </span>
+        </div>
+        <div class="promo-item">
+          <span class="promo-item__num">02</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">Замовлення від 500 $</span>
+            <span class="promo-item__bonus">Знижка 30% на будь-який чохол</span>
+          </span>
+        </div>
+        <div class="promo-item">
+          <span class="promo-item__num">03</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">Замовлення від 1500 $</span>
+            <span class="promo-item__bonus">Чохол «Еко» у подарунок або будь-який інший зі знижкою 50%</span>
+          </span>
+        </div>
+        <div class="promo-item">
+          <span class="promo-item__num">04</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">10 рядових київ</span>
+            <span class="promo-item__bonus">Одинадцятий кий у подарунок</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section dark">
+    <div class="wrap reveal">
+      <div class="cta-block">
+        <span class="eyebrow center">Заявка на консультацію</span>
+        <h2>Доберемо кий під вашу гру</h2>
+        <p class="lead">Дерево, баланс і вага — під вашу гру та хват. Найпевніший спосіб визначитися — коротка розмова з менеджером. Залиште контакт або напишіть у месенджер.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn--gold" href="contacts.html#zayavka">Зв’язатися</a>
+          <a class="btn btn--ghost" href="tel:+380985114275">+38 098 511 42 75</a>
+        </div>
+        <div class="messengers">
+          <a class="chip" href="https://wa.me/380985114275" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="chip" href="https://t.me/+380985114275" target="_blank" rel="noopener">Telegram</a>
+          <a class="chip" href="viber://chat?number=%2B380985114275">Viber</a>
+          <a class="chip" href="https://instagram.com/as.cuesstore" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="../js/i18n/ru.js"></script>
+<script src="../js/i18n/uk.js"></script>
+<script src="../js/i18n/en.js"></script>
+<script src="../js/i18n/i18n.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/catalog-data.js" charset="utf-8"></script>
+<script src="../js/main.js"></script>
+<script src="../js/catalog-render.js" charset="utf-8"></script>
+<script src="../js/quicknav.js" charset="utf-8"></script>
+<script src="../js/zoom.js"></script>
+</body>
+</html>

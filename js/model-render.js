@@ -5,6 +5,9 @@
   var root = document.getElementById('model-root');
   if (!root || !window.CATALOG) return;
 
+  var t = window.t || function (s) { return s; };
+  var asset = window.asset || function (p) { return p; };   // из /uk/ и /en/ картинки лежат уровнем выше
+
   function getSlug() {
     var m = location.search.match(/[?&]slug=([^&]+)/);
     return m ? decodeURIComponent(m[1]) : '';
@@ -17,17 +20,17 @@
 
   // модель не найдена — мягкий фолбэк
   if (!model) {
-    root.innerHTML = '<div class="model-empty"><p>Модель не найдена.</p>'+
-      '<a class="btn btn--ink" href="index.html#catalog">← В каталог</a></div>';
+    root.innerHTML = '<div class="model-empty"><p>'+t('Модель не найдена.')+'</p>'+
+      '<a class="btn btn--ink" href="index.html#catalog">'+t('← В каталог')+'</a></div>';
     return;
   }
 
   // шапка страницы
-  var t = document.getElementById('model-title'); if (t) t.textContent = model.title;
-  var g = document.getElementById('model-group'); if (g) g.textContent = model.tag || model.group || 'Модель';
-  var s = document.getElementById('model-sub'); if (s) s.textContent = model.sub || '';
-  var cr = document.getElementById('crumb-model'); if (cr) cr.textContent = model.title;
-  document.title = model.title + ' — модель кия | AS Cues';
+  var el = document.getElementById('model-title'); if (el) el.textContent = t(model.title);
+  var g = document.getElementById('model-group'); if (g) g.textContent = t(model.tag || model.group || 'Модель');
+  var s = document.getElementById('model-sub'); if (s) s.textContent = t(model.sub || '');
+  var cr = document.getElementById('crumb-model'); if (cr) cr.textContent = t(model.title);
+  document.title = t(model.title) + ' — ' + t('модель кия') + ' | AS Cues';
 
   // каждый вариант — строка на всю ширину
   var html = model.variants.map(function (v, i) {
@@ -37,15 +40,15 @@
     '<article class="cat-model reveal">'+
       '<div class="cat-model__top">'+
         '<span class="cat-model__num">'+nn+'</span>'+
-        '<h3 class="cat-model__name">'+esc(v.wood)+'</h3>'+
-        '<span class="cat-model__group">'+esc(model.title)+'</span>'+
+        '<h3 class="cat-model__name">'+esc(t(v.wood))+'</h3>'+
+        '<span class="cat-model__group">'+esc(t(model.title))+'</span>'+
       '</div>'+
-      '<div class="cat-model__photo"><img src="'+esc(v.img)+'" alt="'+esc(model.title+' — '+v.wood)+'" loading="lazy"></div>'+
+      '<div class="cat-model__photo"><img src="'+esc(asset(v.img))+'" alt="'+esc(t(model.title)+' — '+t(v.wood))+'" loading="lazy"></div>'+
       '<div class="cat-model__meta">'+
-        '<div class="cat-spec"><span class="k">Цена</span><span class="v">'+esc(v.price)+'</span></div>'+
-        '<div class="cat-spec"><span class="k">Размер</span><span class="v">'+size.n+' <small>'+(size.u||'см')+'</small></span></div>'+
-        '<div class="cat-spec"><span class="k">Вес</span><span class="v">'+weight.n+' <small>'+(weight.u||'г')+'</small></span></div>'+
-        '<div class="cat-model__cta"><a class="cat-btn" href="contacts.html#zayavka">Заказать <span class="cat-btn__go">→</span></a></div>'+
+        '<div class="cat-spec"><span class="k">'+t('Цена')+'</span><span class="v">'+esc(v.price)+'</span></div>'+
+        '<div class="cat-spec"><span class="k">'+t('Размер')+'</span><span class="v">'+size.n+' <small>'+t(size.u||'см')+'</small></span></div>'+
+        '<div class="cat-spec"><span class="k">'+t('Вес')+'</span><span class="v">'+weight.n+' <small>'+t(weight.u||'г')+'</small></span></div>'+
+        '<div class="cat-model__cta"><a class="cat-btn" href="contacts.html#zayavka">'+t('Заказать')+' <span class="cat-btn__go">→</span></a></div>'+
       '</div>'+
     '</article>';
   }).join('');

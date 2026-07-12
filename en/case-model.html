@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Model | AS Cues</title>
+<meta name="description" content="Case options from the AS workshop: leather, colour, dimensions and weight. Choose the material and fittings — we'll build a case for your cue.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/case-model.html">
+<link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/case-model.html">
+<link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/case-model.html">
+<link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/case-model.html">
+</head>
+<body data-page="cases">
+<div id="site-header"></div>
+
+<main>
+  <header class="page-head">
+    <div class="wrap">
+      <div class="page-head__inner">
+        <div class="breadcrumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; <a href="cases.html">Cases</a> &nbsp;/&nbsp; <span id="crumb-model">Model</span></div>
+        <span class="eyebrow" id="model-group">Model</span>
+        <h1 id="model-title">Case model</h1>
+        <p id="model-sub"></p>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <!-- сюда рендерится модель из js/cases-data.js по ?slug= -->
+      <div id="case-model-root"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section dark">
+    <div class="wrap reveal">
+      <div class="cta-block">
+        <span class="eyebrow center">Ready to order?</span>
+        <h2>We'll craft a case for your cue</h2>
+        <p class="lead" style="margin-inline:auto">Any material and fittings, sized for your shafts and matched to your style. Send a request and a manager will confirm the details and price.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn--gold" href="contacts.html#zayavka">Get in touch</a>
+          <a class="btn btn--ghost" href="cases.html">← Back to cases</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="../js/i18n/ru.js"></script>
+<script src="../js/i18n/uk.js"></script>
+<script src="../js/i18n/en.js"></script>
+<script src="../js/i18n/i18n.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/cases-data.js" charset="utf-8"></script>
+<script src="../js/main.js"></script>
+<script src="../js/case-model-render.js" charset="utf-8"></script>
+<script src="../js/zoom.js"></script>
+</body>
+</html>

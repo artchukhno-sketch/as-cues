@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AS Cues — Handcrafted Carved Cue Workshop | Dnipro</title>
+<meta name="description" content="The AS workshop: handcrafted carved billiard cues since 2000. Ebony, rosewood, silver and ivory inlay. Cues played by world and Ukrainian champions.">
+<meta property="og:title" content="AS Cues — Handcrafted Carved Cue Workshop">
+<meta property="og:description" content="A cue as a craftsman's masterpiece. Handmade since 2000.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/">
+<link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/">
+<link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/">
+<link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+
+<main>
+  <!-- ГЕРОЙ -->
+  <section class="hero">
+    <video class="hero__video" src="../assets/video/cue-rotate.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="hero__grad"></div>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow">Signature billiard cues</span>
+        <h1>The cue as <em>masterpiece</em></h1>
+        <p class="hero__sub">Billiard cues — from everyday models to collector's pieces. We match the wood, balance and weight to your game.</p>
+        <div class="btn-row">
+          <a class="btn btn--gold" href="#catalog">View the catalogue</a>
+          <a class="btn btn--ghost" href="contacts.html#zayavka">Get in touch</a>
+        </div>
+        <div class="hero__meta">
+          <div><div class="num">25</div><div class="lbl">years</div></div>
+          <div><div class="num">18</div><div class="lbl">models</div></div>
+          <div><div class="num">15+</div><div class="lbl">wood species</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАТАЛОГ (главное продающее — сразу после героя) -->
+  <section class="section section--tight" id="catalog">
+    <div class="wrap">
+      <div class="catalog-head reveal">
+        <div>
+          <span class="eyebrow">Model range</span>
+          <h2 style="margin-top:16px">Cue catalogue</h2>
+        </div>
+        <button type="button" class="quicknav-open" aria-haspopup="dialog">
+          All models <span class="quicknav-open__count">18</span>
+        </button>
+      </div>
+      <!-- каталог рендерится из js/catalog-data.js -->
+      <div id="catalog-root"></div>
+    </div>
+  </section>
+
+  <!-- Панель быстрой навигации (выезжает справа) -->
+  <div class="quicknav" id="quicknav" aria-hidden="true">
+    <div class="quicknav__overlay" data-quicknav-close></div>
+    <aside class="quicknav__panel" role="dialog" aria-modal="true" aria-label="All models">
+      <div class="quicknav__head">
+        <span class="quicknav__title">All models</span>
+        <button type="button" class="quicknav__close" aria-label="Close" data-quicknav-close>&times;</button>
+      </div>
+      <nav class="quicknav__list" id="quicknav-list"><!-- список из catalog-data.js --></nav>
+    </aside>
+  </div>
+
+  <!-- О МАСТЕРСКОЙ -->
+  <section class="section">
+    <div class="wrap reveal">
+      <div class="brand-block">
+        <span class="eyebrow">The brand</span>
+        <h2>A craft,<br>proven by time</h2>
+        <div class="brand-banner">
+          <img src="../img/decor/about-us-heading.jpg" alt="The AS workshop: handcrafted billiard cues on a table in the showroom">
+        </div>
+        <div class="brand-block__text brand-block__text--2">
+          <div class="brand-col">
+            <div class="brand-col__head"><span class="brand-col__num">01</span><h3 class="brand-col__title">History</h3></div>
+            <p>Since 2000, the AS workshop has been making handcrafted billiard cues. Today it's a brand in its own right — cues that are bought and collected on a par with the value of the table itself.</p>
+          </div>
+          <div class="brand-col">
+            <div class="brand-col__head"><span class="brand-col__num">02</span><h3 class="brand-col__title">Approach</h3></div>
+            <p>The finest handcrafted cues for Russian pyramid, across a huge range of price categories. We'll make a cue of any size and weight. And we never turn our back on our own work: any part can be repaired, replaced or refined.</p>
+          </div>
+        </div>
+        <div class="btn-row" style="margin-top:28px">
+          <a class="btn btn--ink" href="about.html">About the brand and champions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- УСЛУГИ -->
+  <section class="section">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <span class="eyebrow">After purchase</span>
+        <h2>Service for the life of your cue</h2>
+      </div>
+      <div class="serv-grid">
+        <div class="serv reveal">
+          <div class="serv__head"><span class="serv__num">01</span><h3>Repair & refinement</h3></div>
+          <div class="serv__media">
+            <video class="serv__video" muted loop playsinline preload="none"
+                   poster="../img/decor/banners/service-repair-poster.jpg"
+                   data-src="../img/decor/craftsman_cue_loop.mp4"
+                   aria-label="A craftsman refining a billiard cue"></video>
+          </div>
+          <div class="serv__body">
+            <p>Weight adjustment, tip replacement, joint, shaft and bumper cap replacement. Refinishing and repolishing. Any damage can be repaired.</p>
+            <a class="arrow-link" href="services.html#remont">Repair price list</a>
+          </div>
+        </div>
+        <div class="serv reveal">
+          <div class="serv__head"><span class="serv__num">02</span><h3>The Upgrade Programme</h3></div>
+          <div class="serv__media">
+            <video class="serv__video" muted loop playsinline preload="none"
+                   poster="../img/decor/banners/service-upgrade-poster.jpg"
+                   data-src="../img/decor/cue-upgrade-loop.mp4"
+                   aria-label="A budget and a premium cue on the cloth — trade-in with a top-up"></video>
+          </div>
+          <div class="serv__body">
+            <p>Want a pricier cue but not sure what to do with your old one? Bring it in — we'll value it, help you choose a new one, and you only pay the difference.</p>
+            <a class="arrow-link" href="services.html#upgrade">How it works</a>
+          </div>
+        </div>
+        <div class="serv reveal">
+          <div class="serv__head"><span class="serv__num">03</span><h3>A cue built for you</h3></div>
+          <div class="serv__media">
+            <video class="serv__video" muted loop playsinline preload="none"
+                   poster="../img/decor/banners/service-hand-poster.jpg"
+                   aria-label="A handcrafted billiard cue in a player's hand">
+              <source data-src="../img/decor/cue-aiming-loop.webm" type="video/webm">
+              <source data-src="../img/decor/cue-aiming-loop.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="serv__body">
+            <p>Wood, balance, length and weight are chosen individually in a consultation with a manager. This isn't an off-the-shelf product — it's your instrument.</p>
+            <a class="arrow-link" href="contacts.html#zayavka">Get a consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРИ ПОКУПКЕ -->
+  <section class="section">
+    <div class="wrap reveal">
+      <div class="section-head reveal">
+        <span class="eyebrow">On purchase</span>
+        <h2>Bonuses and savings</h2>
+      </div>
+      <div class="promo-grid">
+        <div class="promo-item">
+          <span class="promo-item__num">01</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">Orders from $300</span>
+            <span class="promo-item__bonus">Free delivery across Ukraine, on us</span>
+          </span>
+        </div>
+        <div class="promo-item">
+          <span class="promo-item__num">02</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">Orders from $500</span>
+            <span class="promo-item__bonus">30% off any case</span>
+          </span>
+        </div>
+        <div class="promo-item">
+          <span class="promo-item__num">03</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">Orders from $1500</span>
+            <span class="promo-item__bonus">A free "Eco" case, or 50% off any other</span>
+          </span>
+        </div>
+        <div class="promo-item">
+          <span class="promo-item__num">04</span>
+          <span class="promo-item__txt">
+            <span class="promo-item__cond">10 standard cues</span>
+            <span class="promo-item__bonus">The eleventh cue is free</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section dark">
+    <div class="wrap reveal">
+      <div class="cta-block">
+        <span class="eyebrow center">Request a consultation</span>
+        <h2>We'll match a cue to your game</h2>
+        <p class="lead">Wood, balance and weight — matched to your game and grip. The surest way to decide is a short conversation with a manager. Leave your contact or message us directly.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn--gold" href="contacts.html#zayavka">Get in touch</a>
+          <a class="btn btn--ghost" href="tel:+380985114275">+38 098 511 42 75</a>
+        </div>
+        <div class="messengers">
+          <a class="chip" href="https://wa.me/380985114275" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="chip" href="https://t.me/+380985114275" target="_blank" rel="noopener">Telegram</a>
+          <a class="chip" href="viber://chat?number=%2B380985114275">Viber</a>
+          <a class="chip" href="https://instagram.com/as.cuesstore" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="../js/i18n/ru.js"></script>
+<script src="../js/i18n/uk.js"></script>
+<script src="../js/i18n/en.js"></script>
+<script src="../js/i18n/i18n.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/catalog-data.js" charset="utf-8"></script>
+<script src="../js/main.js"></script>
+<script src="../js/catalog-render.js" charset="utf-8"></script>
+<script src="../js/quicknav.js" charset="utf-8"></script>
+<script src="../js/zoom.js"></script>
+</body>
+</html>

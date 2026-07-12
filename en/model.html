@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cue Model | AS Cues</title>
+<meta name="description" content="Cue model options from the AS workshop: wood species, prices, dimensions and weight. Choose the pattern and character — we'll finalise the build in a consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/model.html">
+<link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/model.html">
+<link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/model.html">
+<link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/model.html">
+</head>
+<body data-page="cues">
+<div id="site-header"></div>
+
+<main>
+  <header class="page-head">
+    <div class="wrap">
+      <div class="page-head__inner">
+        <div class="breadcrumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; <a href="index.html#catalog">Catalogue</a> &nbsp;/&nbsp; <span id="crumb-model">Model</span></div>
+        <span class="eyebrow" id="model-group">Model</span>
+        <h1 id="model-title">Cue model</h1>
+        <p id="model-sub"></p>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <!-- сюда рендерится модель из js/catalog-data.js по ?slug= -->
+      <div id="model-root"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section dark">
+    <div class="wrap reveal">
+      <div class="cta-block">
+        <span class="eyebrow center">Ready to order?</span>
+        <h2>We'll build this cue for your game</h2>
+        <p class="lead" style="margin-inline:auto">Wood, balance, length and weight — matched to you. Send a request and a manager will confirm the details and price.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn--gold" href="contacts.html#zayavka">Get in touch</a>
+          <a class="btn btn--ghost" href="index.html#catalog">← Back to catalogue</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="../js/i18n/ru.js"></script>
+<script src="../js/i18n/uk.js"></script>
+<script src="../js/i18n/en.js"></script>
+<script src="../js/i18n/i18n.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/catalog-data.js" charset="utf-8"></script>
+<script src="../js/main.js"></script>
+<script src="../js/model-render.js" charset="utf-8"></script>
+<script src="../js/zoom.js"></script>
+</body>
+</html>

@@ -5,6 +5,7 @@
   var list  = document.getElementById('quicknav-list');
   if (!panel || !list || !window.CATALOG) return;
 
+  var t = window.t || function (s) { return s; };
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
   // сгруппировать модели по group (порядок групп — как в данных)
@@ -17,11 +18,11 @@
   list.innerHTML = groups.map(function (g) {
     var items = byGroup[g].map(function (m) {
       return '<a class="quicknav__link" href="#model-'+esc(m.slug)+'" data-slug="'+esc(m.slug)+'">'+
-        '<span>'+esc(m.title)+'</span>'+
+        '<span>'+esc(t(m.title))+'</span>'+
         '<small>'+esc(m.range)+'</small>'+
       '</a>';
     }).join('');
-    return '<div class="quicknav__group"><div class="quicknav__group-title">'+esc(g)+'</div>'+items+'</div>';
+    return '<div class="quicknav__group"><div class="quicknav__group-title">'+esc(t(g))+'</div>'+items+'</div>';
   }).join('');
 
   function open() {

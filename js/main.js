@@ -183,7 +183,7 @@ document.querySelectorAll('form[data-lead]').forEach(form => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     const original = btn.textContent;
-    btn.textContent = 'Заявка отправлена ✓';
+    btn.textContent = (window.t || (s => s))('Заявка отправлена ✓');
     btn.disabled = true;
     form.reset();
     setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 4000);
