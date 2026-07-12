@@ -186,12 +186,17 @@
   document.getElementById('site-header')?.insertAdjacentHTML('beforeend', header);
   document.getElementById('site-footer')?.insertAdjacentHTML('beforeend', footer);
 
-  // Двухуровневый «Каталог»: наведение/фокус на левую категорию — показываем её панель справа.
+  // Двухуровневый «Каталог» на ДЕСКТОПЕ: наведение/фокус на левую категорию —
+  // показываем её панель справа. На мобильном раскрытием управляет тап (js/main.js):
+  // там тач-браузер эмулирует mouseenter, и он гасил только что открытую панель —
+  // тап открывал её, а следующий за ним click тут же считал это «повторным» и закрывал.
   (function () {
     var tabs = document.querySelectorAll('.cat-tab');
     var panes = document.querySelectorAll('.cat-pane');
     if (!tabs.length) return;
+    var isMobileNav = function () { return window.matchMedia('(max-width: 900px)').matches; };
     function activate(key) {
+      if (isMobileNav()) return;
       tabs.forEach(function (t) { t.classList.toggle('is-active', t.getAttribute('data-cat') === key); });
       panes.forEach(function (p) { p.classList.toggle('is-active', p.getAttribute('data-cat') === key); });
     }
