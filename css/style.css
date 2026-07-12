@@ -2239,7 +2239,7 @@ body:has(.header--hidden) .catalog-jump { top: 24px; }
   /* в круге — только иконка: подпись и счётчик убраны */
   .catalog-jump .quicknav-open__label,
   .catalog-jump .quicknav-open__count { display: none; }
-  .catalog-jump .quicknav-open__icon { display: block; width: 17px; height: 17px; }
+  .catalog-jump .quicknav-open__icon { display: block; width: 22px; height: 22px; }
 }
 .quicknav-open {
   display: inline-flex; align-items: center; gap: 6px;
