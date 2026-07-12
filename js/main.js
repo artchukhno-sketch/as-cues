@@ -197,6 +197,22 @@ document.querySelectorAll('form[data-lead]').forEach(form => {
   });
 });
 
+// Числа в герое считаются сами: годы — от 2000-го, модели — из каталога.
+// Чтобы не править цифры руками в трёх языковых версиях каждый новый год
+// и после каждой добавленной модели.
+(function () {
+  const years = new Date().getFullYear() - 2000;
+  const models = Array.isArray(window.CATALOG) ? window.CATALOG.length : 0;
+
+  const setStat = (key, value) => {
+    if (!value) return;
+    document.querySelectorAll(`[data-stat="${key}"]`).forEach(el => { el.textContent = value; });
+  };
+
+  setStat('years', years);
+  setStat('models', models);
+})();
+
 // Липкая кнопка «Все модели»: показывается, пока каталог в зоне видимости.
 // Раньше такая кнопка стояла в каждой карточке — 11 одинаковых подряд читались
 // как шум. Теперь одна на весь каталог, и она не мозолит глаза за его пределами.
