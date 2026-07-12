@@ -213,18 +213,35 @@ document.querySelectorAll('form[data-lead]').forEach(form => {
   setStat('models', models);
 })();
 
-// Липкая кнопка «Все модели»: показывается, пока каталог в зоне видимости.
-// Раньше такая кнопка стояла в каждой карточке — 11 одинаковых подряд читались
-// как шум. Теперь одна на весь каталог, и она не мозолит глаза за его пределами.
+// Липкая кнопка «Все модели»: одна на весь каталог (раньше такая же стояла
+// в каждой карточке — 11 подряд читались как шум).
+// Показывается по двум условиям сразу: экран внутри каталога И шапка на виду.
+// Каталог высокий, поэтому «пересекается с вьюпортом» — почти всегда true;
+// нужен именно верх экрана внутри секции, иначе кнопка висит уже над героем.
+// Ко второму условию просто цепляемся за шапку: она уже знает направление
+// скролла, и кнопка появляется/прячется с ней синхронно.
 (function () {
   const catalog = document.getElementById('catalog');
   const jump = document.querySelector('.catalog-jump');
+  const header = document.querySelector('.header');
   if (!catalog || !jump) return;
 
-  if (!('IntersectionObserver' in window)) { jump.classList.add('is-visible'); return; }
+  let ticking = false;
 
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => jump.classList.toggle('is-visible', e.isIntersecting));
-  }, { threshold: 0 });
-  io.observe(catalog);
+  const apply = () => {
+    const box = catalog.getBoundingClientRect();
+    // верх экрана попал в секцию каталога (с запасом, чтобы кнопка не мигала на границе)
+    const inCatalog = box.top < 120 && box.bottom > 120;
+    const headerShown = !header || !header.classList.contains('header--hidden');
+    jump.classList.toggle('is-visible', inCatalog && headerShown);
+    ticking = false;
+  };
+
+  const onScroll = () => {
+    if (!ticking) { window.requestAnimationFrame(apply); ticking = true; }
+  };
+
+  apply();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
 })();
