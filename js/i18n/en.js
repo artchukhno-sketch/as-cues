@@ -90,8 +90,8 @@ window.I18N.en = {
 
   // model subtitles
   '4-лучевой узор': 'Four-point inlay',
-  'Цельные и разборные · шафт граб · турник из красного дерева':
-    'One-piece and jointed · hornbeam shaft · mahogany butt',
+  'Шафт граб · турняк из красного дерева':
+    'Hornbeam shaft · mahogany butt',
 
   // ── Wood species ──────────────────────────────────────────────────
   'эбен': 'ebony',

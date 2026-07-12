@@ -8,30 +8,27 @@
   const t = window.t || (s => s);            // перевод; на RU возвращает строку как есть
   const lang = window.LANG || 'ru';
 
+  // Группы моделей для мега-меню — строятся из js/catalog-data.js, а не пишутся руками:
+  // раньше список дублировался здесь и разъезжался с каталогом при каждой правке данных.
+  // Порядок групп и моделей — как в данных.
+  function cueGroups() {
+    const catalog = window.CATALOG || [];
+    const order = [], byGroup = {};
+    catalog.forEach(m => {
+      if (!byGroup[m.group]) { byGroup[m.group] = []; order.push(m.group); }
+      byGroup[m.group].push(m);
+    });
+    return order.map(g => ({
+      title: t(g),
+      href: 'index.html#model-' + byGroup[g][0].slug,     // клик по заголовку — к первой модели группы
+      items: byGroup[g].map(m => ({ label: t(m.title), href: 'index.html#model-' + m.slug })),
+    }));
+  }
+
   // Двухуровневый «Каталог»: слева категории продукции, справа — содержимое категории.
   // У «Кии» справа группы моделей; у остальных — краткое описание + переход.
   const catalogCats = [
-    { key: 'kii', label: t('Кии'), href: 'index.html#catalog', groups: [
-      { title: t('Стрела Корона'), href: 'index.html#model-korona-4perjevaia', items: [
-        { label: t('Стрела Корона 4-перьевая'), href: 'index.html#model-korona-4perjevaia' },
-        { label: t('Стрела Корона 8-перьевая'), href: 'index.html#model-korona-vosmiperjevaia' },
-        { label: t('Стрела Корона 12-перьевая'), href: 'index.html#model-korona-12perjevaia' },
-      ]},
-      { title: t('Мастер'), href: 'index.html#model-master-46', items: [
-        { label: t('Мастер 4-6'), href: 'index.html#model-master-46' },
-        { label: t('Мастер две трети'), href: 'index.html#model-master-23' },
-        { label: t('Мастер цельный'), href: 'index.html#model-master-tselnii' },
-        { label: t('Мастер 12-8 Люкс'), href: 'index.html#model-master-12-8-luks' },
-        { label: t('Мастер Люкс две трети'), href: 'index.html#model-master-luks-23' },
-        { label: t('Мастер Люкс цельный'), href: 'index.html#model-master-luks-tselnii' },
-      ]},
-      { title: t('Другие модели'), href: 'index.html#model-tsvetok', items: [
-        { label: t('Цветок'), href: 'index.html#model-tsvetok' },
-        { label: t('Консул 3-4'), href: 'index.html#model-konsyl-34' },
-        { label: t('Юниор'), href: 'index.html#model-junior' },
-        { label: t('Легенда'), href: 'index.html#model-legenda' },
-      ]},
-    ]},
+    { key: 'kii', label: t('Кии'), href: 'index.html#catalog', groups: cueGroups() },
     { key: 'cases', label: t('Чехлы'), href: 'cases.html',
       desc: t('Чехлы и кейсы ручной работы из натуральных материалов — под ваш кий.') },
     { key: 'accessories', label: t('Аксессуары'), href: 'accessories.html',
