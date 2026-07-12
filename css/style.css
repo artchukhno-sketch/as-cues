@@ -1927,6 +1927,9 @@ body:has(> main > .page-head) { padding-top: 0; }
     display: none;
   }
   .nav.open .nav__item.is-open > .nav__menu { display: block; }
+  /* раскрытый раздел помечаем чёрной линией — тем же приёмом, что активный
+     подраздел («Кии»), чтобы состояние читалось одинаково на обоих уровнях */
+  .nav.open .nav__item.is-open > a { border-bottom-color: var(--ink); }
   /* стрелка-указатель у раскрываемых пунктов */
   .nav.open .nav__chev {
     display: block;
