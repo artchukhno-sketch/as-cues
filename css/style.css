@@ -1872,14 +1872,16 @@ body:has(> main > .page-head) { padding-top: 0; }
   .hero__meta .lbl { font-size: 10.5px; letter-spacing: .1em; }
   .hero__meta .num { font-size: 32px; }
 
-  /* мобильное меню */
+  /* мобильное меню — список в одну колонку.
+     Сетка 2×2 не годилась: раскрытый «Каталог» занимал обе колонки, сетка
+     пересобиралась, и соседние пункты прыгали вниз. В один столбец подменю
+     просто раздвигает список сверху вниз — ничего не перескакивает. */
   .nav.open {
-    display: grid;
-    grid-template-columns: 1fr 1fr;   /* главные разделы 2×2 — компактно */
-    column-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;             /* пункты во всю ширину, а не по центру */
     position: fixed;
     inset: 68px 0 auto 0;
-    align-items: start;
     background: var(--paper);
     border-bottom: 1px solid var(--line);
     padding: 8px var(--gutter) 24px;
@@ -1887,14 +1889,14 @@ body:has(> main > .page-head) { padding-top: 0; }
     max-height: calc(100vh - 68px);
     overflow-y: auto;
   }
-  .nav.open .nav__item { position: static; }
-  /* раскрытый пункт занимает обе колонки — вложенный список во всю ширину */
-  .nav.open .nav__item.is-open { grid-column: 1 / -1; }
+  .nav.open .nav__item { position: static; width: 100%; }
   .nav.open .nav__item > a {
+    display: flex;                    /* базовый inline-flex сжимал ссылку и линию по тексту */
+    width: 100%;
     padding: 15px 0;
     border-bottom: 1px solid var(--line);
     font-size: 16px;
-    justify-content: space-between;
+    justify-content: space-between;   /* название слева, шеврон справа */
   }
   .nav.open .nav__item > a::after { display: none; }
   /* меню на белом фоне — текст всегда тёмный, даже когда шапка «над героем» */
@@ -1942,9 +1944,10 @@ body:has(> main > .page-head) { padding-top: 0; }
     background: transparent; border: 0; box-shadow: none; border-radius: 0;
     min-height: 0; padding: 4px 0 8px;
   }
+  /* подразделы — в столбец: в две колонки раскрытие «Киёв» перекидывало
+     соседние пункты между колонками и они прыгали */
   .nav.open .catmenu__tabs {
-    display: grid; grid-template-columns: 1fr 1fr;  /* подразделы 2×2 */
-    column-gap: 20px; gap: 0 20px;
+    display: block;
     background: transparent; border: 0; padding: 0 0 0 16px;
   }
   .nav.open .cat-tab {
