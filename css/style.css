@@ -1982,7 +1982,15 @@ body:has(> main > .page-head) { padding-top: 0; }
     border-bottom: 1px solid var(--line);
     color: var(--txt);
   }
-  .nav.open .cat-tab.is-active { background: transparent; color: var(--txt); }
+  /* Активный подраздел: у таба уже есть своя линия-разделитель, а десктопное
+     подчёркивание-псевдоэлемент рисовало вторую — получалось двойное.
+     На мобильном псевдоэлемент убираем, а основную линию делаем чёрной. */
+  .nav.open .cat-tab::after { display: none; }
+  .nav.open .cat-tab.is-active {
+    background: transparent;
+    color: var(--txt);
+    border-bottom-color: var(--ink);
+  }
   /* стрелка честно показывает поведение:
      раскрываемый раздел (Кии) — шеврон вниз и переворот при раскрытии,
      остальные (Чехлы/Аксессуары/Эксклюзив) — стрелка вправо = переход на страницу */
