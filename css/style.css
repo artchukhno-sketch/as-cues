@@ -2207,37 +2207,39 @@ body:has(.header--hidden) .catalog-jump { top: 24px; }
 }
 
 @media (max-width: 900px) {
-  /* На мобильном кнопка сжимается в ярлычок, приклеенный к правому краю экрана:
-     панель быстрой навигации выезжает справа, и ярлычок торчит ровно оттуда —
-     жест и результат совпадают. Раньше это была широкая белая кнопка по центру
-     внизу: она читалась как ещё один кусок контента и никуда не указывала.
-     По вертикали — низко, под большим пальцем: фото киёв занимают середину
-     карточки во всю ширину, и ярлычок посередине экрана ложился прямо на кий. */
+  /* На мобильном от кнопки остаётся круг с иконкой списка — без подписи и числа.
+     Широкая белая кнопка по центру читалась как ещё один кусок контента, а текст
+     в ней спорил с текстом карточек. Круг у правого края внизу: под большим
+     пальцем, рядом с той стороной, откуда выезжает панель, и не ложится на фото
+     кия (снимки занимают середину карточки во всю ширину). */
   .catalog-jump {
     top: auto;
     bottom: calc(24px + env(safe-area-inset-bottom));
     left: auto;
-    right: 0;
+    right: 16px;
     justify-content: flex-end;
-    transform: translateX(8px);      /* выезжает из-за края, а не сверху */
+    transform: translateY(8px);
   }
   .catalog-jump.is-visible { transform: none; }
   body:has(.header--hidden) .catalog-jump { top: auto; }
 
   .catalog-jump .quicknav-open {
-    gap: 8px;
-    padding: 12px 14px;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    gap: 0;
+    justify-content: center;
     background: var(--ink);
     color: var(--paper);
     border-color: var(--ink);
-    border-right: none;              /* прижат к краю — правой грани нет */
-    border-radius: 4px 0 0 4px;      /* скруглён только со стороны контента */
-    box-shadow: -6px 4px 20px rgba(14,13,11,.22);
+    border-radius: 50%;
+    box-shadow: 0 6px 22px rgba(14,13,11,.26);
     backdrop-filter: none;           /* заливка непрозрачная, блюр не нужен */
   }
-  /* текст прячем — остаются иконка списка и число: ярлычок не заслоняет кий */
-  .catalog-jump .quicknav-open__label { display: none; }
-  .catalog-jump .quicknav-open__icon { display: block; }
+  /* в круге — только иконка: подпись и счётчик убраны */
+  .catalog-jump .quicknav-open__label,
+  .catalog-jump .quicknav-open__count { display: none; }
+  .catalog-jump .quicknav-open__icon { display: block; width: 17px; height: 17px; }
 }
 .quicknav-open {
   display: inline-flex; align-items: center; gap: 6px;
