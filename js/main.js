@@ -24,7 +24,14 @@ if (burger && nav) {
     link.addEventListener('click', e => {
       if (!isMobileNav() || !nav.classList.contains('open')) return;
       e.preventDefault();
-      link.closest('.nav__item').classList.toggle('is-open');
+      const item = link.closest('.nav__item');
+      const opened = item.classList.toggle('is-open');
+      // свернули раздел — сбрасываем и то, что было раскрыто внутри,
+      // иначе при следующем открытии «Кии» окажутся уже развёрнутыми
+      if (!opened) {
+        item.querySelectorAll('.cat-tab.is-active, .cat-pane.is-active')
+            .forEach(el => el.classList.remove('is-active'));
+      }
     });
   });
 

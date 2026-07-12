@@ -357,7 +357,12 @@ body:has(> main > .page-head) { padding-top: 0; }
 .nav__item > a:hover::after,
 .nav__item > a[aria-current="page"]::after { transform: scaleX(1); }
 .nav__chev { transition: transform .28s var(--ease); opacity: .6; }
-.nav__item--has-menu:hover .nav__chev { transform: rotate(180deg); }
+/* Переворот по наведению — только там, где есть мышь. На тач-экране :hover
+   залипает после тапа и не сбрасывается: шеврон оставался перевёрнутым даже
+   после сворачивания «Каталога». На мобильном им управляет класс .is-open. */
+@media (hover: hover) and (pointer: fine) {
+  .nav__item--has-menu:hover .nav__chev { transform: rotate(180deg); }
+}
 
 /* выпадающее меню */
 .nav__menu {
