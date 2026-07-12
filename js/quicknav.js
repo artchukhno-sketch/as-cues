@@ -15,10 +15,7 @@
     byGroup[m.group].push(m);
   });
 
-  // счётчик у кнопок «Все модели» — из данных, чтобы не расходился с каталогом
-  document.querySelectorAll('.quicknav-open__count').forEach(function (el) {
-    el.textContent = window.CATALOG.length;
-  });
+  // счётчик у кнопок «Все модели» проставляет main.js — вместе с числами в герое
 
   list.innerHTML = groups.map(function (g) {
     var items = byGroup[g].map(function (m) {
