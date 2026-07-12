@@ -2220,9 +2220,7 @@ body:has(.header--hidden) .catalog-jump { top: 24px; }
   color: var(--paper);
   border-color: var(--ink);
   border-radius: 26px;             /* половина высоты: круг в покое, пилюля раскрытой */
-  box-shadow: 0 6px 22px rgba(14,13,11,.2);
   backdrop-filter: none;
-  transition: box-shadow .25s var(--ease);
 }
 .catalog-jump .quicknav-open:hover { background: var(--ink); color: var(--paper); }
 .catalog-jump .quicknav-open__icon { display: block; width: 18px; height: 18px; }
@@ -2277,7 +2275,6 @@ body:has(.header--hidden) .catalog-jump { top: 24px; }
     color: var(--paper);
     border-color: var(--ink);
     border-radius: 50%;
-    box-shadow: 0 6px 22px rgba(14,13,11,.26);
     backdrop-filter: none;           /* заливка непрозрачная, блюр не нужен */
   }
   /* в круге — только иконка: подпись и счётчик убраны */
