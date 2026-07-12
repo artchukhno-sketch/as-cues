@@ -2201,9 +2201,47 @@ body:has(> main > .page-head) { padding-top: 0; }
 .header--hidden ~ main .catalog-jump,
 body:has(.header--hidden) .catalog-jump { top: 24px; }
 
+/* На десктопе в покое — такой же тёмный круг с иконкой, как на мобильном:
+   белый прямоугольник висел прямо под чёрной кнопкой «Связаться» в шапке
+   и спорил с ней. При наведении круг мягко раскрывается в пилюлю с подписью:
+   в покое чисто, но при интересе к кнопке видно, что за ней. Растём влево —
+   правый край приколот к границе контента, поэтому кнопка не дёргается. */
 .catalog-jump .quicknav-open {
-  background: rgba(255,255,255,.9);
-  backdrop-filter: blur(14px);
+  gap: 0;
+  height: 52px;
+  padding: 0 16px;                 /* 16 + иконка 18 + 16 + рамки → ровно круг 52px */
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+  border-radius: 26px;             /* половина высоты: круг в покое, пилюля раскрытой */
+  box-shadow: 0 6px 22px rgba(14,13,11,.2);
+  backdrop-filter: none;
+  transition: box-shadow .25s var(--ease);
+}
+.catalog-jump .quicknav-open:hover { background: var(--ink); color: var(--paper); }
+.catalog-jump .quicknav-open__icon { display: block; width: 18px; height: 18px; }
+
+/* подпись и число: свёрнуты в ноль, при наведении разъезжаются.
+   max-width, а не display — иначе ширина прыгает скачком, без анимации. */
+.catalog-jump .quicknav-open__label,
+.catalog-jump .quicknav-open__count {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width .3s var(--ease), opacity .2s var(--ease), margin-left .3s var(--ease);
+}
+.catalog-jump .quicknav-open:hover .quicknav-open__label,
+.catalog-jump .quicknav-open:focus-visible .quicknav-open__label {
+  max-width: 160px;
+  opacity: 1;
+  margin-left: 10px;
+}
+.catalog-jump .quicknav-open:hover .quicknav-open__count,
+.catalog-jump .quicknav-open:focus-visible .quicknav-open__count {
+  max-width: 40px;
+  opacity: 1;
+  margin-left: 6px;
 }
 
 @media (max-width: 900px) {
