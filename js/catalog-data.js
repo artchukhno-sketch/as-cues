@@ -264,8 +264,8 @@ window.CATALOG = [
     ]
   },
   {
-    "slug": "master-luks-23",
-    "title": "Мастер Люкс две трети",
+    "slug": "master-luks",
+    "title": "Мастер Люкс",
     "group": "Мастер",
     "gid": "master",
     "tag": "Линейка Мастер · Люкс",
@@ -310,61 +310,8 @@ window.CATALOG = [
     ]
   },
   {
-    "slug": "master-luks-tselnii",
-    "title": "Мастер Люкс цельный",
-    "group": "Мастер",
-    "gid": "master",
-    "tag": "Линейка Мастер · Люкс",
-    "sub": "",
-    "range": "450–750 $",
-    "variants": [
-      {
-        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-eben-satin.jpg",
-        "wood": "эбен, сатин",
-        "price": "750 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-bokote-eben.jpg",
-        "wood": "бокоте, эбен",
-        "price": "450 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-gombeiro.jpg",
-        "wood": "гомбейро",
-        "price": "450 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-kokobolo.jpg",
-        "wood": "кокоболо",
-        "price": "450 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-palisandr.jpg",
-        "wood": "палисандр",
-        "price": "450 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-luks-tselnii/2k/master-luks-tselnii-eben.jpg",
-        "wood": "эбен",
-        "price": "750 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      }
-    ]
-  },
-  {
-    "slug": "master-23",
-    "title": "Мастер две трети",
+    "slug": "master",
+    "title": "Мастер",
     "group": "Мастер",
     "gid": "master",
     "tag": "Линейка Мастер",
@@ -417,66 +364,6 @@ window.CATALOG = [
         "img": "img/models/master/master-dve-treti/2k/master-23eben-movingo.jpg",
         "wood": "эбен, мовинго",
         "price": "550 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      }
-    ]
-  },
-  {
-    "slug": "master-tselnii",
-    "title": "Мастер цельный",
-    "group": "Мастер",
-    "gid": "master",
-    "tag": "Линейка Мастер",
-    "sub": "",
-    "range": "220–550 $",
-    "variants": [
-      {
-        "img": "img/models/master/master-tselnii/2k/master-tselnii-eben.jpg",
-        "wood": "эбен",
-        "price": "550 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-tselnii/2k/master-tselnii-masaranduba.jpg",
-        "wood": "масарандуба",
-        "price": "220 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-tselnii/2k/master-tselnii-venge.jpg",
-        "wood": "венге",
-        "price": "220 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-tselnii/2k/master-tselnii-palisandr.jpg",
-        "wood": "палисандр",
-        "price": "300 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-tselnii/2k/master-tselnii-bokote-eben.jpg",
-        "wood": "бокоте, эбен",
-        "price": "350 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-tselnii/2k/master-tselnii-gombeiro.jpg",
-        "wood": "гомбейро",
-        "price": "400 $",
-        "size": "~160 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/master/master-tselnii/2k/master-tselnii-kokobolo.jpg",
-        "wood": "кокоболо",
-        "price": "400 $",
         "size": "~160 см",
         "weight": "~700 г"
       }

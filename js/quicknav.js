@@ -15,6 +15,11 @@
     byGroup[m.group].push(m);
   });
 
+  // счётчик у кнопок «Все модели» — из данных, чтобы не расходился с каталогом
+  document.querySelectorAll('.quicknav-open__count').forEach(function (el) {
+    el.textContent = window.CATALOG.length;
+  });
+
   list.innerHTML = groups.map(function (g) {
     var items = byGroup[g].map(function (m) {
       return '<a class="quicknav__link" href="#model-'+esc(m.slug)+'" data-slug="'+esc(m.slug)+'">'+

@@ -2379,3 +2379,123 @@ body:has(> main > .page-head) { padding-top: 0; }
   .feat-card__media img { transition: none; }
   .feat-card:hover .feat-card__media img { transform: none; }
 }
+
+/* ============================================================
+   КОНСТРУКЦИЯ — сборки кия (страница модели)
+   Не выбор товара: цена и породы от сборки не зависят. Справка:
+   клик по названию открывает схему в попапе.
+   ============================================================ */
+
+.constr {
+  margin-bottom: clamp(40px, 5vw, 72px);
+  padding-bottom: clamp(32px, 4vw, 48px);
+  border-bottom: 1px solid var(--line);
+}
+.constr__head { margin-bottom: clamp(20px, 2.5vw, 28px); }
+.constr__label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--txt-mut);
+  margin-bottom: 10px;
+}
+.constr__lead {
+  font-size: clamp(15px, 1.5vw, 18px);
+  color: var(--txt-mut);
+  line-height: 1.5;
+  max-width: 62ch;
+  margin: 0;
+}
+
+/* сборки — четыре строки во всю ширину: кий лежит горизонтально на белом,
+   тем же языком, что фото в каталоге. Разницу видно с одного взгляда. */
+.constr__list { border-top: 1px solid var(--line); }
+
+.constr__item {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 260px);
+  align-items: center;
+  gap: clamp(24px, 4vw, 56px);
+  padding: clamp(18px, 2.2vw, 30px) 0;
+  border-bottom: 1px solid var(--line);
+}
+/* последняя строка — без своей линии: ниже уже идёт граница всего блока (.constr) */
+.constr__item:last-child { border-bottom: 0; }
+/* SVG со preserveAspectRatio="none": высоту задаём здесь, чтобы силуэт не истончался
+   при сжатии по ширине — на узком экране кий тянется по вертикали и остаётся читаемым */
+.constr__fig img { display: block; width: 100%; height: clamp(26px, 3.4vw, 46px); }
+
+/* подпись справа от схемы: номер занимает обе строки, название и пояснение — рядом */
+.constr__cap {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 14px;
+  align-items: center;
+}
+/* номер во всю высоту подписи: крупный, приглушённый — как номера моделей в каталоге */
+.constr__num {
+  grid-row: 1 / 3;
+  align-self: center;
+  font-family: var(--serif);
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 1;
+  color: var(--line-2);
+}
+.constr__name {
+  grid-column: 2; grid-row: 1;
+  align-self: end;
+  font-family: var(--sans); font-weight: 600;
+  font-size: clamp(16px, 1.5vw, 18px);
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-transform: none;   /* h3 в проекте — Oswald капсом; здесь капс спорил бы с заголовком модели */
+  color: var(--txt);
+  margin: 0;
+}
+.constr__short {
+  grid-column: 2; grid-row: 2;
+  align-self: start;
+  font-size: clamp(13px, 1.2vw, 15px);
+  line-height: 1.45;
+  color: var(--txt-mut);
+  margin: 3px 0 0;
+}
+
+/* узкий экран: подпись уходит под схему — кию нужна вся ширина.
+   Схема нарисована под ~1200px; сжатая до 350px она истончается в волосок,
+   поэтому фиксируем высоту и тянем силуэт по вертикали (preserveAspectRatio),
+   чтобы толщина и засечки на стыках остались читаемыми. */
+@media (max-width: 720px) {
+  .constr__item {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: clamp(20px, 4vw, 28px) 0;
+  }
+  .constr__fig img { height: 30px; }
+}
+
+/* строка над сеткой каталога — ловит того, кто листает и не открывает модели */
+.catalog-note {
+  display: flex; align-items: baseline; gap: 14px;
+  flex-wrap: wrap;
+  padding-bottom: clamp(28px, 3.5vw, 40px);
+  margin-bottom: clamp(28px, 3.5vw, 40px);
+  border-bottom: 1px solid var(--line);
+}
+.catalog-note__label {
+  font-family: var(--sans);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--txt-mut);
+  flex-shrink: 0;
+}
+.catalog-note__text {
+  font-size: clamp(15px, 1.5vw, 18px);
+  color: var(--txt);
+  line-height: 1.5;
+  margin: 0;
+}
+
+

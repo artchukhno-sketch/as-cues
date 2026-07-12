@@ -73,11 +73,8 @@ window.I18N.en = {
   'Стрела Корона 8-перьевая': 'Arrow Crown 8-point',
   'Стрела Корона 12-перьевая': 'Arrow Crown 12-point',
   'Мастер 4-6': 'Master 4-6',
-  'Мастер две трети': 'Master two-thirds',
-  'Мастер цельный': 'Master one-piece',
   'Мастер 12-8 Люкс': 'Master 12-8 Lux',
-  'Мастер Люкс две трети': 'Master Lux two-thirds',
-  'Мастер Люкс цельный': 'Master Lux one-piece',
+  'Мастер Люкс': 'Master Lux',
   'Цветок': 'Flower',
   'Консул 3-4': 'Consul 3-4',
   'Юниор': 'Junior',
@@ -199,5 +196,18 @@ window.I18N.en = {
   'Цельный черный': 'One-piece, black',
   'Цельный черный №2': 'One-piece, black No. 2',
   'Цельный коричневый': 'One-piece, brown',
-  'Цельный коричневый №2': 'One-piece, brown No. 2'
+  'Цельный коричневый №2': 'One-piece, brown No. 2',
+
+  // ── Cue construction ──────────────────────────────────────────
+  'Конструкция': 'Construction',
+  'Две части': 'Two-piece',
+  'Цельный': 'One-piece',
+  'Две трети': 'Three-quarter',
+  'Три части': 'Three-piece',
+  'Стык по центру': 'Joint at the centre',
+  'Без стыка': 'No joint',
+  'Стык ближе к ручке': 'Joint closer to the grip',
+  'Два стыка, компактный': 'Two joints, most compact',
+  'Эту модель можно собрать в любой из конструкций — уточните у менеджера.':
+    'This model can be built in any of these constructions — ask our manager for details.'
 };
