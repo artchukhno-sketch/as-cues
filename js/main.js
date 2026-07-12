@@ -189,3 +189,19 @@ document.querySelectorAll('form[data-lead]').forEach(form => {
     setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 4000);
   });
 });
+
+// Липкая кнопка «Все модели»: показывается, пока каталог в зоне видимости.
+// Раньше такая кнопка стояла в каждой карточке — 11 одинаковых подряд читались
+// как шум. Теперь одна на весь каталог, и она не мозолит глаза за его пределами.
+(function () {
+  const catalog = document.getElementById('catalog');
+  const jump = document.querySelector('.catalog-jump');
+  if (!catalog || !jump) return;
+
+  if (!('IntersectionObserver' in window)) { jump.classList.add('is-visible'); return; }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => jump.classList.toggle('is-visible', e.isIntersecting));
+  }, { threshold: 0 });
+  io.observe(catalog);
+})();

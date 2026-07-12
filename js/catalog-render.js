@@ -20,7 +20,6 @@
       '<div class="cat-model__top">'+
         '<span class="cat-model__num">'+nn+'</span>'+
         '<h3 class="cat-model__name">'+t(m.title)+'</h3>'+
-        '<button type="button" class="quicknav-open cat-model__nav" aria-haspopup="dialog">'+t('Все модели')+' <span class="quicknav-open__count">'+window.CATALOG.length+'</span></button>'+
       '</div>'+
       '<a class="cat-model__photo" href="model.html?slug='+m.slug+'"><img src="'+asset(v0.img)+'" alt="'+t(m.title)+'" loading="lazy"></a>'+
       '<div class="cat-model__meta">'+
