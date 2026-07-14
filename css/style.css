@@ -1126,71 +1126,6 @@ body:has(> main > .page-head) { padding-top: 0; }
 .chip:hover { border-color: var(--ink); background: var(--ink); color: #fff; }
 
 /* ============================================================
-   PROMO — «При покупке» (акции и бонусы)
-   ============================================================ */
-/* Бонусы — компактная сетка 2×2. Разделители — короткие линии, НЕ доходящие
-   до углов (чтобы не читались как рамки-карточки). Ячейки равной высоты,
-   контент по вертикали в центре. */
-.promo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr;                    /* все ряды одинаковой высоты */
-  margin: clamp(24px, 3vw, 40px) 0 0;
-}
-.promo-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-content: center;                  /* контент по вертикали — в центре */
-  gap: 6px 20px;
-  padding: clamp(24px, 2.8vw, 34px) clamp(22px, 2.4vw, 34px);
-}
-/* вертикальная линия-разделитель между колонками — с отступом от верх/низ,
-   не доходит до углов. Ставим у левых ячеек справа. */
-.promo-item:nth-child(odd)::after {
-  content: "";
-  position: absolute;
-  top: 16%;
-  bottom: 16%;
-  right: 0;
-  width: 1px;
-  background: var(--line);
-}
-/* горизонтальная линия-разделитель между рядами — с отступом слева/справа,
-   не доходит до углов. Ставим у нижнего ряда сверху. */
-.promo-item:nth-child(n+3)::before {
-  content: "";
-  position: absolute;
-  left: clamp(22px, 2.4vw, 34px);
-  right: clamp(22px, 2.4vw, 34px);
-  top: 0;
-  height: 1px;
-  background: var(--line);
-}
-.promo-item__num {
-  font-family: var(--serif);
-  font-size: clamp(38px, 4vw, 54px);       /* крупнее — визуально в высоту двух строк */
-  font-weight: 500;
-  color: var(--line-2);
-  line-height: 1;
-  grid-row: span 2;                        /* номер слева на всю высоту текста */
-  align-self: center;
-}
-/* печать в компактной сетке избыточна — прячем (HTML не трогаем) */
-.promo-item__seal { display: none; }
-.promo-item__txt { display: flex; flex-direction: column; gap: 5px; }
-.promo-item__cond {
-  font-size: 11px; font-weight: 600; letter-spacing: .14em;
-  text-transform: uppercase; color: var(--gold);
-}
-.promo-item__bonus {
-  font-family: var(--serif);
-  font-size: clamp(17px, 1.6vw, 20px);
-  font-weight: 500; line-height: 1.2;
-  color: var(--txt);
-}
-
-/* ============================================================
    ФОРМА-ЗАЯВКА
    ============================================================ */
 
@@ -1842,17 +1777,6 @@ body:has(> main > .page-head) { padding-top: 0; }
 @media (max-width: 760px) {
   body { font-size: 16px; padding-top: 68px; }
   body[data-page="home"] { padding-top: 0; }
-  /* промо: на узком экране сетка 2×2 схлопывается в один столбец */
-  .promo-grid { grid-template-columns: 1fr; }
-  .promo-item { gap: 4px 14px; }
-  .promo-item:nth-child(odd)::after { display: none; }  /* вертикаль не нужна в 1 колонку */
-  /* горизонтальная линия между ВСЕМИ пунктами (кроме первого) */
-  .promo-item:nth-child(n+3)::before { display: none; } /* сброс десктопного правила */
-  .promo-item:not(:first-child)::before {
-    content: ""; position: absolute; top: 0;
-    left: clamp(20px, 5vw, 34px); right: clamp(20px, 5vw, 34px);
-    height: 1px; background: var(--line);
-  }
   /* шаги апгрейда: в 2 колонки, кнопка во всю ширину */
   .steps { grid-template-columns: 1fr 1fr; }
   .steps-cta { justify-content: stretch; }

@@ -164,7 +164,7 @@ if (burger && nav) {
 // Ненавязчиво: только внутри сеток карточек, шаг маленький, максимум 4 ступени.
 (function () {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const groups = document.querySelectorAll('.serv-grid, .feat-grid, .promo-grid, .cards, .value-grid');
+  const groups = document.querySelectorAll('.serv-grid, .feat-grid, .cards, .value-grid');
   groups.forEach(group => {
     const items = Array.from(group.children).filter(c => c.classList.contains('reveal'));
     items.forEach((el, i) => {
