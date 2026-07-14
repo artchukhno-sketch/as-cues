@@ -260,33 +260,33 @@ window.CATALOG = [
     "gid": "master",
     "tag": "Линейка Мастер",
     "sub": "",
-    "range": "450–600 $",
+    "range": "300–600 $",
     "variants": [
       {
         "img": "img/models/master/master-4-6/2k/master-46masaranduba.jpg",
         "wood": "масарандуба",
-        "price": "450 $",
+        "price": "300 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
       {
         "img": "img/models/master/master-4-6/2k/master-46venge.jpg",
         "wood": "венге",
-        "price": "450 $",
+        "price": "300 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
       {
         "img": "img/models/master/master-4-6/2k/master-46palisandr.jpg",
         "wood": "палисандр",
-        "price": "450 $",
+        "price": "400 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
       {
         "img": "img/models/master/master-4-6/2k/master-46chernyi-grab.jpg",
         "wood": "черный граб",
-        "price": "450 $",
+        "price": "400 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
@@ -313,42 +313,42 @@ window.CATALOG = [
         "wood": "палисандр",
         "price": "400 $",
         "size": "~163 см",
-        "weight": "~700"
+        "weight": "~700 г"
       },
       {
         "img": "img/models/drugie-modeli/tsvetok/2k/17-tsvetok-8-luchevoy-wenge-2k.jpg",
         "wood": "венге",
         "price": "400 $",
         "size": "~163 см",
-        "weight": "~700"
+        "weight": "~700 г"
       },
       {
         "img": "img/models/drugie-modeli/tsvetok/2k/18-tsvetok-8-luchevoy-antratsit-2k.jpg",
         "wood": "антрацит",
         "price": "400 $",
         "size": "~163 см",
-        "weight": "~700"
+        "weight": "~700 г"
       },
       {
         "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok-4luchevoi-chernyi-grab-popugai.jpg",
         "wood": "4 – лучевой черный граб Попугай",
         "price": "400 $",
         "size": "~163 см",
-        "weight": "~700"
+        "weight": "~700 г"
       },
       {
         "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok-4luchevoi-eben.jpg",
         "wood": "4 – лучевой эбен",
         "price": "750 $",
         "size": "~163 см",
-        "weight": "~700"
+        "weight": "~700 г"
       },
       {
         "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok-4luchevoi-eben-popugai.jpg",
         "wood": "4 – лучевой эбен Попугай",
         "price": "750 $",
         "size": "~163 см",
-        "weight": "~700"
+        "weight": "~700 г"
       }
     ]
   },
@@ -423,7 +423,7 @@ window.CATALOG = [
         "wood": "венге",
         "price": "300 $",
         "size": "~163 см",
-        "weight": "999"
+        "weight": "~700 г"
       }
     ]
   }
