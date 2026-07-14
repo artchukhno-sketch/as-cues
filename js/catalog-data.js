@@ -46,7 +46,7 @@ window.CATALOG = [
       {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/06-strela-korona-4-perevaya-lunniy-eben-2k.jpg",
         "wood": "лунный эбен",
-        "price": "500 $",
+        "price": "900 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
