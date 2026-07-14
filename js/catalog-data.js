@@ -6,7 +6,7 @@ window.CATALOG = [
     "gid": "strely",
     "tag": "Линейка стрел",
     "sub": "",
-    "range": "500–900 $",
+    "range": "550–900 $",
     "variants": [
       {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/01-strela-korona-4-perevaya-eben-2k.jpg",
@@ -25,21 +25,21 @@ window.CATALOG = [
       {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/03-strela-korona-4-perevaya-gombeiro-2k.jpg",
         "wood": "гомбейро",
-        "price": "500 $",
+        "price": "550 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
       {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/04-strela-korona-4-perevaya-kokobolo-2k.jpg",
         "wood": "кокоболо",
-        "price": "500 $",
+        "price": "550 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
       {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/05-strela-korona-4-perevaya-antratsit-2k.jpg",
         "wood": "антрацит",
-        "price": "500 $",
+        "price": "550 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
@@ -53,35 +53,35 @@ window.CATALOG = [
       {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-venge.jpg",
         "wood": "венге",
-        "price": "500 $",
+        "price": "550 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
       {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-masaranduba.jpg",
         "wood": "масарандуба",
-        "price": "500 $",
+        "price": "550 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
       {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-amarant.jpg",
         "wood": "амарант",
-        "price": "500 $",
+        "price": "550 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
       {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-palisandr.jpg",
         "wood": "палисандр",
-        "price": "500 $",
+        "price": "550 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
       {
         "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4perjevaia-zerikotte.jpg",
         "wood": "зерикотте",
-        "price": "600 $",
+        "price": "550 $",
         "size": "~163 см",
         "weight": "~700 г"
       }
