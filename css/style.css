@@ -1765,8 +1765,11 @@ body:has(> main > .page-head) { padding-top: 0; }
      На мобильном колонки нет: он ничего не сообщает, а место занимает. */
   .split__logo { display: none; }
   /* видео-макро: на мобайле колонка одна, тянуться не по чему —
-     задаём контейнеру пропорцию, иначе он схлопывается и видео не видно */
-  .split__media--video { aspect-ratio: 1 / 1; }
+     задаём контейнеру пропорцию, иначе он схлопывается и видео не видно.
+     Отменяем stretch с десктопа: в одноколоночной сетке он схлопывает
+     ширину блока в ноль (видео внутри — absolute, распорки нет). */
+  .split:has(.split__media--video) { align-items: start; }
+  .split__media--video { aspect-ratio: 1 / 1; width: 100%; justify-self: stretch; }
   .contact-grid { grid-template-columns: 1fr; }
 
   /* каталог: фото сверху, данные снизу */
