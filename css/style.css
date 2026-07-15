@@ -103,6 +103,16 @@ h2 { font-size: clamp(34px, 5.5vw, 60px); }
   height: 3px;
   background: var(--gold);
   opacity: .8;
+  flex-shrink: 0;
+}
+/* герой: полоска с двух сторон от текста */
+.hero .eyebrow::after {
+  content: "";
+  width: 28px;
+  height: 3px;
+  background: var(--accent-gold);
+  opacity: .8;
+  flex-shrink: 0;
 }
 .eyebrow.center { justify-content: center; }
 /* эйбрау на тёмных секциях (герой, футер, page-head) — золотой акцент.
@@ -625,6 +635,7 @@ body:has(> main > .page-head) { padding-top: 0; }
   margin: 26px 0 0;
 }
 .hero h1 em {
+  display: block;               /* акцентное слово всегда с новой строки — во всех языках */
   font-style: italic;
   color: var(--accent-gold);
 }
@@ -1663,6 +1674,14 @@ body:has(> main > .page-head) { padding-top: 0; }
   transition: transform .6s var(--ease);
 }
 .info-card:hover .info-card__media img { transform: scale(1.045); }
+/* эксклюзив: небольшой зум (кий не влезает целиком) + кадр опущен ниже */
+.info-card__media--zoom img { transform: scale(1.18) translateY(6%); }
+.info-card:hover .info-card__media--zoom img { transform: scale(1.22) translateY(6%); }
+/* 26 лет в ремесле: картинка прижата к низу — виден низ киёв, обрезается верх */
+.info-card__media--zoom-in img { object-position: bottom; }
+/* выбор чемпионов: сильный зум на кубок + кадр опущен, чтобы было видно основание */
+.info-card__media--zoom-champ img { transform: scale(1.55) translateY(-8%); }
+.info-card:hover .info-card__media--zoom-champ img { transform: scale(1.6) translateY(-8%); }
 .info-card h3 { font-size: 23px; margin-bottom: 10px; }
 .info-card p {
   font-size: 14.5px; color: var(--txt-mut);
@@ -1805,6 +1824,12 @@ body:has(> main > .page-head) { padding-top: 0; }
 @media (max-width: 760px) {
   body { font-size: 16px; padding-top: 68px; }
   body[data-page="home"] { padding-top: 0; }
+  /* герой: полоски с двух сторон. Текст (слова и кегль) не меняем —
+     чтобы всё влезало в одну строку, слегка уплотняем трекинг и укорачиваем
+     полоски. На совсем узких экранах полоски ещё короче. */
+  .hero .eyebrow { gap: 10px; letter-spacing: 0.12em; }
+  .hero .eyebrow::before,
+  .hero .eyebrow::after { width: 14px; }
   /* шаги апгрейда: в 2 колонки, кнопка во всю ширину */
   .steps { grid-template-columns: 1fr 1fr; }
   .steps-cta { justify-content: stretch; }
@@ -2589,3 +2614,10 @@ body:has(.header--hidden) .catalog-jump { top: 24px; }
 }
 
 
+
+/* герой: на совсем узких экранах полоски у eyebrow ещё короче */
+@media (max-width: 360px) {
+  .hero .eyebrow { gap: 8px; letter-spacing: 0.08em; }
+  .hero .eyebrow::before,
+  .hero .eyebrow::after { width: 10px; }
+}

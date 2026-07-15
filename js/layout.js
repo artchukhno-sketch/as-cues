@@ -146,7 +146,7 @@
           <div class="footer__social" aria-label="${t('Мы в соцсетях')}">
             <span class="footer__social-label">${t('Соцсети')}</span>
             <div class="footer__social-icons">
-              <a href="https://instagram.com/as.cuesstore" target="_blank" rel="noopener" aria-label="Instagram">
+              <a href="https://www.instagram.com/as.cuesstore/" target="_blank" rel="noopener" aria-label="Instagram">
                 <svg viewBox="0 0 24 24" width="28" height="28" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
               </a>
               <a href="https://facebook.com/as.cuesstore" target="_blank" rel="noopener" aria-label="Facebook">
