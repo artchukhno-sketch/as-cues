@@ -1771,7 +1771,13 @@ body:has(> main > .page-head) { padding-top: 0; }
   .split:has(.split__media--video) { align-items: start; }
   /* горизонтальный кий — узкая лента, без чёрных полей сверху/снизу.
      object-position смещает кадр так, чтобы кий (центр ~53% высоты) был по центру ленты. */
-  .split__media--video { aspect-ratio: 10 / 3; width: 100%; justify-self: stretch; }
+  /* видео во всю ширину экрана: выходим за боковые отступы .wrap (--gutter) */
+  .split__media--video {
+    aspect-ratio: 10 / 3;
+    width: calc(100% + var(--gutter) * 2);
+    margin-inline: calc(var(--gutter) * -1);
+    justify-self: stretch;
+  }
   .split__media--video video { object-position: center 57%; }
   .contact-grid { grid-template-columns: 1fr; }
 
