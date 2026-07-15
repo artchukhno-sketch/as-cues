@@ -43,10 +43,11 @@
           </div>
         </div>
         <div class="split__media split__media--video">
-          <video autoplay loop muted playsinline preload="metadata"
-                 aria-label="Macro footage of cue inlay work: silver and mother-of-pearl">
-            <source src="../img/decor/inlay-macro-loop.webm" type="video/webm">
-            <source src="../img/decor/inlay-macro-loop.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none"
+                 poster="../img/decor/inlay-rotate-poster.jpg"
+                 aria-label="Cue rotating around its axis: inlay, silver and mother-of-pearl">
+            <source data-src="../img/decor/inlay-rotate.mp4" type="video/mp4">
+            <source data-src="../img/decor/inlay-rotate.webm" type="video/webm">
           </video>
         </div>
       </div>
@@ -137,5 +138,6 @@
 <script src="../js/catalog-data.js" charset="utf-8"></script>
 <script src="../js/layout.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/zoom.js"></script>
 </body>
 </html>
