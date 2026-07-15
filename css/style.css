@@ -1764,24 +1764,35 @@ body:has(> main > .page-head) { padding-top: 0; }
   /* Логотип на «Оптовикам» — только на десктопе, где он держит правую колонку.
      На мобильном колонки нет: он ничего не сообщает, а место занимает. */
   .split__logo { display: none; }
-  /* видео-макро: на мобайле колонка одна, тянуться не по чему —
-     задаём контейнеру пропорцию, иначе он схлопывается и видео не видно.
-     Отменяем stretch с десктопа: в одноколоночной сетке он схлопывает
-     ширину блока в ноль (видео внутри — absolute, распорки нет). */
-  .split:has(.split__media--video) { align-items: start; }
-  /* горизонтальный кий — узкая лента, без чёрных полей сверху/снизу.
-     object-position смещает кадр так, чтобы кий (центр ~53% высоты) был по центру ленты. */
-  /* видео во всю ширину экрана: выходим за боковые отступы .wrap (--gutter) */
-  .split__media--video {
+  /* видео эксклюзива после заголовка: распаковываем текстовую колонку в общий
+     поток и через order вставляем видео между h2 и текстом. gap:0 — чтобы
+     штатные margin элементов (18px у h2, 20px у p) работали как везде. */
+  .split--video-after-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+  .split--video-after-title .split__text { display: contents; }
+  .split--video-after-title .eyebrow { order: 1; }
+  .split--video-after-title h2 { order: 2; }
+  .split--video-after-title .split__media--video { order: 3; }
+  .split--video-after-title p:nth-of-type(1) { order: 4; }
+  .split--video-after-title p:nth-of-type(2) { order: 5; }
+  .split--video-after-title .btn-row { order: 6; }
+
+  .split--video-after-title .split__media--video {
     aspect-ratio: 10 / 3;
     width: calc(100% + var(--gutter) * 2);
     margin-inline: calc(var(--gutter) * -1);
-    justify-self: stretch;
-    overflow: hidden; /* обрезаем то, что вылезло за счёт scale */
+    margin-top: 24px;
+    overflow: hidden;
   }
-  /* в кадре по бокам кия есть чёрные поля — зумим, чтобы кий шёл от края до края */
-  .split__media--video video {
-    object-position: 40% 57%;
+  .split--video-after-title .split__media--video video {
+    position: static;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 57%;
     transform: scale(1.6);
   }
   .contact-grid { grid-template-columns: 1fr; }
