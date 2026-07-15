@@ -1777,8 +1777,13 @@ body:has(> main > .page-head) { padding-top: 0; }
     width: calc(100% + var(--gutter) * 2);
     margin-inline: calc(var(--gutter) * -1);
     justify-self: stretch;
+    overflow: hidden; /* обрезаем то, что вылезло за счёт scale */
   }
-  .split__media--video video { object-position: center 57%; }
+  /* в кадре по бокам кия есть чёрные поля — зумим, чтобы кий шёл от края до края */
+  .split__media--video video {
+    object-position: 40% 57%;
+    transform: scale(1.6);
+  }
   .contact-grid { grid-template-columns: 1fr; }
 
   /* каталог: фото сверху, данные снизу */
