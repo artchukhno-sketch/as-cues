@@ -26,10 +26,11 @@ debug.log
 assets/Studio_product_photo_of_the_EX_Nano_Banana_2_67746.psd
 *.psd
 
-# Рабочая папка с исходниками фото и архив неиспользуемого (не для сайта)
+# Архив неиспользуемых фото — только локально, в деплой не нужен
+neispolzuemye/
+
+# Рабочие папки с исходниками фото (не для сайта)
 img/models/new/
-img/all-unused/
-img/champions/upscale/
 img/champions/_backup_orig/
 img/cases/upscale/
 
@@ -46,5 +47,3 @@ style-guide.html
 
 .vercel
 img/exclusive/_backup_orig/
-
-.vercel
