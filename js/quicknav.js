@@ -17,9 +17,14 @@
 
   // счётчик у кнопок «Все модели» проставляет main.js — вместе с числами в герое
 
+  // База ссылки: на главной — чистый якорь, на других страницах (model.html)
+  // ведём на главную своего языка, где каталог и живёт.
+  var onHome = !!document.getElementById('catalog');
+  var homeHref = onHome ? '' : 'index.html';
+
   list.innerHTML = groups.map(function (g) {
     var items = byGroup[g].map(function (m) {
-      return '<a class="quicknav__link" href="#model-'+esc(m.slug)+'" data-slug="'+esc(m.slug)+'">'+
+      return '<a class="quicknav__link" href="'+homeHref+'#model-'+esc(m.slug)+'" data-slug="'+esc(m.slug)+'">'+
         '<span>'+esc(t(m.title))+'</span>'+
         '<small>'+esc(m.range)+'</small>'+
       '</a>';
@@ -50,18 +55,18 @@
     if (e.key === 'Escape' && panel.classList.contains('is-open')) close();
   });
 
-  // клик по модели — закрыть и плавно проскроллить (учитывая scroll-margin на .cat-model)
+  // клик по модели: на главной — плавно скроллим к строке каталога;
+  // на других страницах (model.html и т.п.) якоря нет — уходим на главную к ней.
   list.addEventListener('click', function (e) {
     var a = e.target.closest('.quicknav__link');
     if (!a) return;
-    e.preventDefault();
     var slug = a.getAttribute('data-slug');
     var target = document.getElementById('model-' + slug);
+    if (!target) return;            // ссылка сработает штатно (href ведёт на главную)
+    e.preventDefault();
     close();
-    if (target) {
-      setTimeout(function () {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 220); // дождаться закрытия панели
-    }
+    setTimeout(function () {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 220); // дождаться закрытия панели
   });
 })();

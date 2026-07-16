@@ -223,19 +223,24 @@ document.querySelectorAll('form[data-lead]').forEach(form => {
 // Ко второму условию просто цепляемся за шапку: она уже знает направление
 // скролла, и кнопка появляется/прячется с ней синхронно.
 (function () {
-  const catalog = document.getElementById('catalog');
   const jump = document.querySelector('.catalog-jump');
-  const header = document.querySelector('.header');
-  if (!catalog || !jump) return;
+  if (!jump) return;
+
+  // область, пока которая в кадре — кнопка нужна:
+  // на главной это секция каталога, на странице модели — карточки вариантов.
+  // Ниже (CTA, футер) кнопка не нужна и не должна лезть на интерфейс.
+  const zone = document.getElementById('catalog') || document.getElementById('model-root');
+  if (!zone) return;
 
   let ticking = false;
 
   const apply = () => {
-    const box = catalog.getBoundingClientRect();
-    // верх экрана попал в секцию каталога (с запасом, чтобы кнопка не мигала на границе)
-    const inCatalog = box.top < 120 && box.bottom > 120;
-    const headerShown = !header || !header.classList.contains('header--hidden');
-    jump.classList.toggle('is-visible', inCatalog && headerShown);
+    const box = zone.getBoundingClientRect();
+    // зона пересекает экран: кнопка нужна, пока видно хоть часть карточек.
+    // Запас снизу (120) — чтобы кнопка ушла заранее и не налезала на CTA/футер.
+    const show = box.top < window.innerHeight - 120 && box.bottom > 120;
+    // кнопка плавает внизу — от видимости шапки не зависит
+    jump.classList.toggle('is-visible', show);
     ticking = false;
   };
 
