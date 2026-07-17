@@ -309,27 +309,6 @@ window.CATALOG = [
     "range": "400–750 $",
     "variants": [
       {
-        "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok_8-luchevoy-palisandr-2k.jpg",
-        "wood": "палисандр",
-        "price": "400 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok_8-luchevoy-venge-2k.jpg",
-        "wood": "венге",
-        "price": "400 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok_8-luchevoy-antratsit-2k.jpg",
-        "wood": "антрацит",
-        "price": "400 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
         "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok_4-luchevoy-chernyy-grab-popugay-2k.jpg",
         "wood": "4 – лучевой черный граб Попугай",
         "price": "400 $",
@@ -347,6 +326,27 @@ window.CATALOG = [
         "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok_4-luchevoy-eben-popugay-2k.jpg",
         "wood": "4 – лучевой эбен Попугай",
         "price": "750 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok_8-luchevoy-palisandr-2k.jpg",
+        "wood": "палисандр",
+        "price": "400 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok_8-luchevoy-venge-2k.jpg",
+        "wood": "венге",
+        "price": "400 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/drugie-modeli/tsvetok/2k/tsvetok_8-luchevoy-antratsit-2k.jpg",
+        "wood": "антрацит",
+        "price": "400 $",
         "size": "~163 см",
         "weight": "~700 г"
       }
