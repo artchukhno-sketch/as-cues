@@ -110,11 +110,17 @@ if (burger && nav) {
     window.__observeReveals();
     return;
   }
+  // threshold: 0 — реагируем, как только видна ЛЮБАЯ часть блока.
+  // Раньше стоял threshold: 0.12 (12% высоты блока), и очень высокие блоки
+  // ломались: у секции чемпионов на мобильном 12% ≈ 750px — почти во весь
+  // экран, и на самой длинной (русской) версии порог не достигался вовсе.
+  // Блок оставался opacity:0 — «белым». Появление всё равно плавное:
+  // rootMargin со сдвигом снизу запускает анимацию чуть раньше края экрана.
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
   window.__observeReveals = (r) => (r || document).querySelectorAll('.reveal:not(.in)').forEach(el => io.observe(el));
   window.__observeReveals();
 })();
