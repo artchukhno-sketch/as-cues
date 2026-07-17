@@ -210,16 +210,44 @@ models.forEach(m => {
   });
 });
 
-// Заглушка формы — без бэкенда, мягкое подтверждение
+// Отправка заявки на /api/lead — оттуда она уходит в Telegram и на почту.
+// Раньше здесь стояла заглушка: кнопка говорила «Отправлено ✓», но заявка
+// никуда не шла. Теперь при неудаче честно показываем ошибку и оставляем
+// текст в полях — человек не должен уйти в уверенности, что ему перезвонят.
 document.querySelectorAll('form[data-lead]').forEach(form => {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    const t = window.t || (s => s);
     const btn = form.querySelector('button[type="submit"]');
     const original = btn.textContent;
-    btn.textContent = (window.t || (s => s))('Заявка отправлена ✓');
+
+    const data = {
+      contact: (form.querySelector('[name="contact"]') || {}).value || '',
+      msg: (form.querySelector('[name="msg"]') || {}).value || '',
+      company: (form.querySelector('[name="company"]') || {}).value || '',  // honeypot
+      page: location.pathname,
+      lang: window.LANG || 'ru',
+    };
+
     btn.disabled = true;
-    form.reset();
-    setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 4000);
+    btn.textContent = t('Отправляем…');
+
+    try {
+      const r = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!r.ok) throw new Error('status ' + r.status);
+
+      btn.textContent = t('Заявка отправлена ✓');
+      form.reset();
+      setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 4000);
+    } catch (err) {
+      // форму не чистим: человек не должен набирать всё заново
+      btn.textContent = t('Не отправилось — напишите в мессенджер');
+      setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 5000);
+    }
   });
 });
 
