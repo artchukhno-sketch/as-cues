@@ -75,7 +75,13 @@
     wrap.addEventListener('mouseleave', hide);
   }
 
+  // Чехлы переиспользуют разметку каталога (.cat-model__photo), но их фото
+  // лежат одним файлом без пары 2k/4k — лупе нечего показывать крупнее,
+  // она просто растягивала бы то же изображение. Поэтому там её не включаем.
+  var isCases = document.body.getAttribute('data-page') === 'cases';
+
   function init() {
+    if (isCases) return;
     document.querySelectorAll('.cat-model__photo').forEach(attach);
   }
 
