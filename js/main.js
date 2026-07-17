@@ -160,6 +160,32 @@ if (burger && nav) {
   videos.forEach(v => io.observe(v));
 })();
 
+// Видео героя грузится ПОСЛЕ отрисовки страницы (data-hero-src + preload="none").
+// Оно весит ~4 МБ и стоит первым в разметке: с preload="auto" браузер тянул его
+// одновременно с текстом и шрифтами, и на мобильном интернете герой оставался
+// пустым до конца загрузки. Теперь сразу виден постер (первый кадр, ~76 КБ),
+// а ролик подхватывается фоном и бесшовно сменяет его.
+// Ленивый загрузчик выше здесь не подходит: он ждёт появления в кадре, а герой
+// в кадре с самого начала — ждать нужно не скролл, а окончание загрузки страницы.
+(function () {
+  var hero = document.querySelector('video[data-hero-src]');
+  if (!hero) return;
+
+  // «уменьшить движение» — остаёмся на постере, ролик не грузим вовсе
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  function loadHero() {
+    if (hero.dataset.loaded) return;
+    hero.dataset.loaded = '1';
+    hero.src = hero.dataset.heroSrc;
+    hero.play().catch(function () {});   // автоплей без звука браузеры разрешают
+  }
+
+  // load уже мог пройти, пока грузился скрипт
+  if (document.readyState === 'complete') loadHero();
+  else window.addEventListener('load', loadHero);
+})();
+
 // Stagger — карточки в ряду появляются мягкой волной, друг за другом.
 // Ненавязчиво: только внутри сеток карточек, шаг маленький, максимум 4 ступени.
 (function () {

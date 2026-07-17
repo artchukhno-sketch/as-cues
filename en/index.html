@@ -11,6 +11,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../img/favicon.svg">
+<meta property="og:image" content="https://as-cues.vercel.app/img/decor/about-us-heading.jpg">
+<meta property="og:image:width" content="1366">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="AS Workshop — handcrafted billiard cues">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/">
 <link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/">
@@ -23,7 +30,8 @@
 <main>
   <!-- ГЕРОЙ -->
   <section class="hero">
-    <video class="hero__video" src="../assets/video/cue-rotate.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <video class="hero__video" data-hero-src="../assets/video/cue-rotate.mp4" poster="../img/decor/hero-cue-poster.jpg"
+           autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
     <div class="hero__grad"></div>
     <div class="hero__inner">
       <div class="hero__content">
@@ -35,8 +43,8 @@
           <a class="btn btn--ghost" href="contacts.html#zayavka">Get in touch</a>
         </div>
         <div class="hero__meta">
-          <div><div class="num" data-stat="years">25</div><div class="lbl">years</div></div>
-          <div><div class="num" data-stat="models">11</div><div class="lbl">models</div></div>
+          <div><div class="num" data-stat="years">26</div><div class="lbl">years</div></div>
+          <div><div class="num" data-stat="models">9</div><div class="lbl">models</div></div>
           <div><div class="num">15+</div><div class="lbl">wood species</div></div>
         </div>
       </div>
@@ -52,7 +60,7 @@
           <h2 style="margin-top:16px">Cue catalogue</h2>
         </div>
         <button type="button" class="quicknav-open" aria-haspopup="dialog">
-          All models <span class="quicknav-open__count">11</span>
+          All models <span class="quicknav-open__count">9</span>
         </button>
       </div>
       <div class="catalog-note reveal">
@@ -71,7 +79,7 @@
           <circle cx="1.5" cy="8" r="1.5" fill="currentColor"/><path d="M6 8h10" stroke="currentColor" stroke-width="1.5"/>
           <circle cx="1.5" cy="13" r="1.5" fill="currentColor"/><path d="M6 13h10" stroke="currentColor" stroke-width="1.5"/>
         </svg>
-        <span class="quicknav-open__label">All models</span> <span class="quicknav-open__count">11</span>
+        <span class="quicknav-open__label">All models</span> <span class="quicknav-open__count">9</span>
       </button>
     </div>
   </section>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://as-cues.vercel.app/sitemap.xml

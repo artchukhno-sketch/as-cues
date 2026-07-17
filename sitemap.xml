@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://as-cues.vercel.app/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/about.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/accessories.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/accessories.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/cases.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/cases.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/contacts.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/dealers.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/dealers.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/dealers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/dealers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/dealers.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/exclusive.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/exclusive.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/exclusive.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/exclusive.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/exclusive.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/services.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/services.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/uk/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/about.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/uk/accessories.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/accessories.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/uk/cases.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/cases.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/uk/contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/contacts.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/uk/dealers.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/dealers.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/dealers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/dealers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/dealers.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/uk/exclusive.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/exclusive.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/exclusive.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/exclusive.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/exclusive.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/uk/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/services.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/services.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/about.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/en/accessories.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/accessories.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/en/cases.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/cases.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/en/contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/contacts.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/en/dealers.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/dealers.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/dealers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/dealers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/dealers.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/en/exclusive.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/exclusive.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/exclusive.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/exclusive.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/exclusive.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://as-cues.vercel.app/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://as-cues.vercel.app/services.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://as-cues.vercel.app/uk/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://as-cues.vercel.app/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://as-cues.vercel.app/services.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
