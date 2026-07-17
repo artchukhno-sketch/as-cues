@@ -97,6 +97,13 @@ window.CATALOG = [
     "range": "750–2500 $",
     "variants": [
       {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_kokobolo-2k.jpg",
+        "wood": "кокоболо",
+        "price": "900 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
         "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_grenadil-2k.jpg",
         "wood": "гренадил",
         "price": "1350 $",
@@ -134,13 +141,6 @@ window.CATALOG = [
       {
         "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_antratsit-2k.jpg",
         "wood": "антрацит",
-        "price": "900 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_kokobolo-2k.jpg",
-        "wood": "кокоболо",
         "price": "900 $",
         "size": "~163 см",
         "weight": "~700 г"
@@ -263,9 +263,9 @@ window.CATALOG = [
     "range": "300–600 $",
     "variants": [
       {
-        "img": "img/models/master/master-4-6/2k/master-4-6_masaranduba-2k.jpg",
-        "wood": "масарандуба",
-        "price": "300 $",
+        "img": "img/models/master/master-4-6/2k/master-4-6_chernyy-grab-2k.jpg",
+        "wood": "черный граб",
+        "price": "400 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
@@ -284,9 +284,9 @@ window.CATALOG = [
         "weight": "~700 г"
       },
       {
-        "img": "img/models/master/master-4-6/2k/master-4-6_chernyy-grab-2k.jpg",
-        "wood": "черный граб",
-        "price": "400 $",
+        "img": "img/models/master/master-4-6/2k/master-4-6_masaranduba-2k.jpg",
+        "wood": "масарандуба",
+        "price": "300 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
@@ -362,15 +362,15 @@ window.CATALOG = [
     "range": "210 $",
     "variants": [
       {
-        "img": "img/models/drugie-modeli/konsul-3-4/2k/konsul-3-4_laysvud-2k.jpg",
-        "wood": "лайсвуд",
+        "img": "img/models/drugie-modeli/konsul-3-4/2k/konsul-3-4_chernyy-grab-2k.jpg",
+        "wood": "черный граб",
         "price": "210 $",
         "size": "~163 см",
         "weight": "~700 г"
       },
       {
-        "img": "img/models/drugie-modeli/konsul-3-4/2k/konsul-3-4_chernyy-grab-2k.jpg",
-        "wood": "черный граб",
+        "img": "img/models/drugie-modeli/konsul-3-4/2k/konsul-3-4_laysvud-2k.jpg",
+        "wood": "лайсвуд",
         "price": "210 $",
         "size": "~163 см",
         "weight": "~700 г"
