@@ -2,6 +2,36 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
+<!-- Автовыбор языка по браузеру. Стоит первым и работает синхронно (до отрисовки),
+     чтобы не мелькнула русская версия перед прыжком на украинскую/английскую.
+     Срабатывает ТОЛЬКО на русской главной. Если человек уже выбирал язык руками
+     (флаг lang-pick) — не трогаем. Ботов не редиректим: поиск должен индексировать
+     каждую версию по её адресу. -->
+<script>
+(function () {
+  try {
+    // только корневая страница: / или /index.html (RU-версия)
+    var p = location.pathname;
+    if (p !== '/' && p !== '/index.html') return;
+    // человек уже выбирал язык — уважаем выбор
+    if (localStorage.getItem('lang-pick')) return;
+    // поисковые боты — не редиректим
+    if (/bot|crawl|spider|slurp|bing|yandex|google|facebook|telegram|whatsapp|preview/i.test(navigator.userAgent)) return;
+
+    var langs = navigator.languages || [navigator.language || ''];
+    var pick = '';
+    for (var i = 0; i < langs.length; i++) {
+      var l = String(langs[i]).toLowerCase();
+      if (l.indexOf('uk') === 0) { pick = 'uk'; break; }   // украинский
+      if (l.indexOf('en') === 0) { pick = 'en'; break; }   // английский
+      if (l.indexOf('ru') === 0) { pick = 'ru'; break; }   // русский — остаёмся
+    }
+    if (pick === 'uk' || pick === 'en') {
+      location.replace('/' + pick + '/' + location.search + location.hash);
+    }
+  } catch (e) {}
+})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AS Cues — мастерская резных киёв ручной работы | Днепр</title>
 <meta name="description" content="Мастерская «АС»: резные кии для бильярда ручной работы с 2000 года. Эбен, палисандр, инкрустация серебром и бивнём. Кии чемпионов мира и Украины.">

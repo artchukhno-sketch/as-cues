@@ -186,6 +186,15 @@
   document.getElementById('site-header')?.insertAdjacentHTML('beforeend', header);
   document.getElementById('site-footer')?.insertAdjacentHTML('beforeend', footer);
 
+  // Ручной выбор языка: как только человек кликнул RU/UK/EN, запоминаем это.
+  // После этого автоопределение языка на главной (инлайн-скрипт в index.html)
+  // больше не срабатывает — уважаем выбор человека.
+  document.querySelectorAll('.lang__opt').forEach(function (a) {
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('lang-pick', '1'); } catch (e) {}
+    });
+  });
+
   // Двухуровневый «Каталог» на ДЕСКТОПЕ: наведение/фокус на левую категорию —
   // показываем её панель справа. На мобильном раскрытием управляет тап (js/main.js):
   // там тач-браузер эмулирует mouseenter, и он гасил только что открытую панель —
