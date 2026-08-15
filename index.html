@@ -13,30 +13,36 @@
     // только корневая страница: / или /index.html (RU-версия)
     var p = location.pathname;
     if (p !== '/' && p !== '/index.html') return;
-    // человек уже выбирал язык — уважаем выбор
-    if (localStorage.getItem('lang-pick')) return;
-    // поисковые боты — не редиректим
+    // поисковые боты — не редиректим (индексируют каждую версию отдельно)
     if (/bot|crawl|spider|slurp|bing|yandex|google|facebook|telegram|whatsapp|preview/i.test(navigator.userAgent)) return;
 
-    var langs = navigator.languages || [navigator.language || ''];
-    // Языки, для которых остаёмся на русской версии: русский и языки СНГ,
-    // где русский понимают лучше английского (бел., каз., кирг. и др.).
-    var ruCis = ['ru', 'be', 'kk', 'ky', 'uz', 'tg', 'tk', 'az', 'hy', 'mo'];
     var pick = '';
-    for (var i = 0; i < langs.length && !pick; i++) {
-      var l = String(langs[i]).toLowerCase().slice(0, 2);
-      if (l === 'uk') { pick = 'uk'; break; }              // украинский → /uk/
-      if (ruCis.indexOf(l) >= 0) { pick = 'ru'; break; }   // русский / СНГ → остаёмся
-      // любой другой понятный язык — берём как английский fallback и выходим
-      pick = 'en';
-      break;
+
+    // 1) человек раньше сам выбрал язык — ведём именно на него (в т.ч. при новом визите).
+    //    Хранится конкретный язык, а не просто «был выбор»: заход снова на голый
+    //    cues.com.ua открывает выбранную версию, а не всегда русскую.
+    var saved = localStorage.getItem('lang-choice');
+    if (saved === 'ru' || saved === 'uk' || saved === 'en') {
+      pick = saved;
+    } else {
+      // 2) первый визит — определяем по языку браузера.
+      // Русский и языки СНГ (русский понимают лучше английского) → русская;
+      // украинский → украинская; всё остальное → английская.
+      var ruCis = ['ru', 'be', 'kk', 'ky', 'uz', 'tg', 'tk', 'az', 'hy', 'mo'];
+      var langs = navigator.languages || [navigator.language || ''];
+      for (var i = 0; i < langs.length; i++) {
+        var l = String(langs[i]).toLowerCase().slice(0, 2);
+        if (l === 'uk') { pick = 'uk'; break; }
+        if (ruCis.indexOf(l) >= 0) { pick = 'ru'; break; }
+        pick = 'en'; break;                 // первый распознанный язык — не СНГ → английский
+      }
+      if (!pick) pick = 'en';               // пустой список языков → английский
     }
-    // ничего не распозналось (пустой список языков) — по умолчанию английский
-    if (!pick) pick = 'en';
 
     if (pick === 'uk' || pick === 'en') {
       location.replace('/' + pick + '/' + location.search + location.hash);
     }
+    // pick === 'ru' — остаёмся на текущей русской странице
   } catch (e) {}
 })();
 </script>
