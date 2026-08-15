@@ -19,13 +19,21 @@
     if (/bot|crawl|spider|slurp|bing|yandex|google|facebook|telegram|whatsapp|preview/i.test(navigator.userAgent)) return;
 
     var langs = navigator.languages || [navigator.language || ''];
+    // Языки, для которых остаёмся на русской версии: русский и языки СНГ,
+    // где русский понимают лучше английского (бел., каз., кирг. и др.).
+    var ruCis = ['ru', 'be', 'kk', 'ky', 'uz', 'tg', 'tk', 'az', 'hy', 'mo'];
     var pick = '';
-    for (var i = 0; i < langs.length; i++) {
-      var l = String(langs[i]).toLowerCase();
-      if (l.indexOf('uk') === 0) { pick = 'uk'; break; }   // украинский
-      if (l.indexOf('en') === 0) { pick = 'en'; break; }   // английский
-      if (l.indexOf('ru') === 0) { pick = 'ru'; break; }   // русский — остаёмся
+    for (var i = 0; i < langs.length && !pick; i++) {
+      var l = String(langs[i]).toLowerCase().slice(0, 2);
+      if (l === 'uk') { pick = 'uk'; break; }              // украинский → /uk/
+      if (ruCis.indexOf(l) >= 0) { pick = 'ru'; break; }   // русский / СНГ → остаёмся
+      // любой другой понятный язык — берём как английский fallback и выходим
+      pick = 'en';
+      break;
     }
+    // ничего не распозналось (пустой список языков) — по умолчанию английский
+    if (!pick) pick = 'en';
+
     if (pick === 'uk' || pick === 'en') {
       location.replace('/' + pick + '/' + location.search + location.hash);
     }
