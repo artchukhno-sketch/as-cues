@@ -1,5 +1,139 @@
 window.CATALOG = [
   {
+    "slug": "korona-12perjevaia",
+    "title": "Стрела Корона 12-перьевая",
+    "group": "Стрела Корона",
+    "gid": "strely",
+    "tag": "Линейка стрел",
+    "sub": "",
+    "range": "1200–1800 $",
+    "variants": [
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_gombeyro-2k.jpg",
+        "wood": "гомбейро",
+        "price": "1200 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_amarant-chernyy-grab-2k.jpg",
+        "wood": "амарант, черный граб",
+        "price": "1200 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_makasar-2k.jpg",
+        "wood": "макасар",
+        "price": "1800 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_palisandr-eben-2k.jpg",
+        "wood": "палисандр, эбен",
+        "price": "1200 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_chernyy-grab-2k.jpg",
+        "wood": "черный граб",
+        "price": "1200 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_kokobolo-eben-2k.jpg",
+        "wood": "кокоболо, эбен",
+        "price": "1200 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_eben-amarello-2k.jpg",
+        "wood": "эбен, амарелло",
+        "price": "1800 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_bokote-eben-2k.jpg",
+        "wood": "бокоте, эбен",
+        "price": "1200 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      }
+    ]
+  },
+  {
+    "slug": "korona-vosmiperjevaia",
+    "title": "Стрела Корона 8-перьевая",
+    "group": "Стрела Корона",
+    "gid": "strely",
+    "tag": "Линейка стрел",
+    "sub": "",
+    "range": "750–2500 $",
+    "variants": [
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_kokobolo-2k.jpg",
+        "wood": "кокоболо",
+        "price": "900 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_grenadil-2k.jpg",
+        "wood": "гренадил",
+        "price": "1350 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_bokote-eben-2k.jpg",
+        "wood": "бокоте, эбен",
+        "price": "900 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_blek-sneyk-2k.jpg",
+        "wood": "блек снейк",
+        "price": "1350 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_zmeya-2k.jpg",
+        "wood": "змея",
+        "price": "2500 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_zerikotte-eben-2k.jpg",
+        "wood": "зерикотте, эбен",
+        "price": "900 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_antratsit-2k.jpg",
+        "wood": "антрацит",
+        "price": "900 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      },
+      {
+        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_chernyy-grab-2k.jpg",
+        "wood": "черный граб",
+        "price": "750 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      }
+    ]
+  },
+  {
     "slug": "korona-4perjevaia",
     "title": "Стрела Корона 4-перьевая",
     "group": "Стрела Корона",
@@ -82,140 +216,6 @@ window.CATALOG = [
         "img": "img/models/strela-korona/korona-4-perevaya/2k/korona-4-perevaya_zerikotte-2k.jpg",
         "wood": "зерикотте",
         "price": "550 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      }
-    ]
-  },
-  {
-    "slug": "korona-vosmiperjevaia",
-    "title": "Стрела Корона 8-перьевая",
-    "group": "Стрела Корона",
-    "gid": "strely",
-    "tag": "Линейка стрел",
-    "sub": "",
-    "range": "750–2500 $",
-    "variants": [
-      {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_kokobolo-2k.jpg",
-        "wood": "кокоболо",
-        "price": "900 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_grenadil-2k.jpg",
-        "wood": "гренадил",
-        "price": "1350 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_bokote-eben-2k.jpg",
-        "wood": "бокоте, эбен",
-        "price": "900 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_blek-sneyk-2k.jpg",
-        "wood": "блек снейк",
-        "price": "1350 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_zmeya-2k.jpg",
-        "wood": "змея",
-        "price": "2500 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_zerikotte-eben-2k.jpg",
-        "wood": "зерикотте, эбен",
-        "price": "900 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_antratsit-2k.jpg",
-        "wood": "антрацит",
-        "price": "900 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-8-perevaya/2k/korona-8-perevaya_chernyy-grab-2k.jpg",
-        "wood": "черный граб",
-        "price": "750 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      }
-    ]
-  },
-  {
-    "slug": "korona-12perjevaia",
-    "title": "Стрела Корона 12-перьевая",
-    "group": "Стрела Корона",
-    "gid": "strely",
-    "tag": "Линейка стрел",
-    "sub": "",
-    "range": "1200–1800 $",
-    "variants": [
-      {
-        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_gombeyro-2k.jpg",
-        "wood": "гомбейро",
-        "price": "1200 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_amarant-chernyy-grab-2k.jpg",
-        "wood": "амарант, черный граб",
-        "price": "1200 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_makasar-2k.jpg",
-        "wood": "макасар",
-        "price": "1800 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_palisandr-eben-2k.jpg",
-        "wood": "палисандр, эбен",
-        "price": "1200 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_chernyy-grab-2k.jpg",
-        "wood": "черный граб",
-        "price": "1200 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_kokobolo-eben-2k.jpg",
-        "wood": "кокоболо, эбен",
-        "price": "1200 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_eben-amarello-2k.jpg",
-        "wood": "эбен, амарелло",
-        "price": "1800 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      },
-      {
-        "img": "img/models/strela-korona/korona-12-perevaya/2k/korona-12-perevaya_bokote-eben-2k.jpg",
-        "wood": "бокоте, эбен",
-        "price": "1200 $",
         "size": "~163 см",
         "weight": "~700 г"
       }
@@ -378,6 +378,24 @@ window.CATALOG = [
     ]
   },
   {
+    "slug": "legenda",
+    "title": "Легенда",
+    "group": "Другие модели",
+    "gid": "drugie",
+    "tag": "Новинка",
+    "sub": "",
+    "range": "300 $",
+    "variants": [
+      {
+        "img": "img/models/drugie-modeli/legenda/2k/legenda_venge-2k.jpg",
+        "wood": "венге",
+        "price": "300 $",
+        "size": "~163 см",
+        "weight": "~700 г"
+      }
+    ]
+  },
+  {
     "slug": "junior",
     "title": "Юниор",
     "group": "Другие модели",
@@ -404,24 +422,6 @@ window.CATALOG = [
         "img": "img/models/_placeholder.svg",
         "wood": "семиперьевой цельный",
         "price": "150 $",
-        "size": "~163 см",
-        "weight": "~700 г"
-      }
-    ]
-  },
-  {
-    "slug": "legenda",
-    "title": "Легенда",
-    "group": "Другие модели",
-    "gid": "drugie",
-    "tag": "Новинка",
-    "sub": "",
-    "range": "300 $",
-    "variants": [
-      {
-        "img": "img/models/drugie-modeli/legenda/2k/legenda_venge-2k.jpg",
-        "wood": "венге",
-        "price": "300 $",
         "size": "~163 см",
         "weight": "~700 г"
       }
